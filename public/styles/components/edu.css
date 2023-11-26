@@ -1,0 +1,68 @@
+/*the education page displaying the content in 2 columns, 
+both taking up 1/2 the screen, left side for text, right side for 
+images*/
+.edu {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    padding-top: 5em;
+    margin: 0;
+    list-style-type: none;
+}
+
+.edu h4{
+    text-align: left;
+}
+
+/*this has text relating to studies as odd children
+and images as even children, and they should be 
+displayed side by side... unless its a small screen*/
+.edu > li{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 1em;
+}
+
+/*this has an image as a child*/
+.edu > li:nth-child(even){
+    list-style-type: none;
+    justify-content: center;
+    align-items: center; /*this makes the image small... so we might want to not use it*/
+    z-index: -4;
+}
+
+/*these style the text for school and year in the education section*/
+.school{
+    margin-top: 0px;   
+}
+
+@media screen and (max-width:720px) {
+    .edu > li {
+        text-align: center;
+        flex-basis: 100%;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    /*since I wasn't sure what was 
+    prohibiting my school to center align
+    I made it important...*/
+    .school{
+        text-align: center !important;
+    }
+
+    /*resetting the top of page*/
+    .edu{
+        margin-top: 2em;
+    }
+
+    /*resetting the top of page
+    with the menu toggled on*/
+    #menu-toggle:checked ~ .edu{
+        margin-top: -170px;
+        z-index: -10;
+    }
+}

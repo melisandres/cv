@@ -1,0 +1,27 @@
+.projects{
+    padding-top: 5em;
+}
+
+.projects section {
+    margin-top: 1em;
+}
+
+.projects h3{
+    margin-left: 1em;
+    margin-bottom: 3em;
+}
+
+@media screen and (max-width:720px) {
+
+    /*resetting the top of page*/
+    .projects{
+        margin-top: 5em;   
+    }
+
+    /*resetting the top of pages
+    with the menu toggled on*/
+    #menu-toggle:checked ~ .projects{
+        margin-top: -100px;
+        z-index: -10;
+    }
+}

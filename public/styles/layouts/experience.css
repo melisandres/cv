@@ -1,0 +1,48 @@
+
+/*the experience page displaying the content in 2 columns, the first taking 1/3, 
+and the second taking up 2/3 of the alloted space*/
+.experience{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding-top: 5em;
+}
+
+.experience > section:nth-child(1){
+    flex-basis: 33.33%;
+} 
+
+.experience > section:nth-child(2){
+    flex-basis: 66.66%;
+} 
+
+.experience ul, .experience li {
+    padding: 0;
+    margin: 0;
+}
+
+.experience section {
+    margin-top: 1em;
+}
+
+@media screen and (max-width:720px) {
+    .experience{
+        margin-left: 1em;
+    }
+
+    .experience li{
+        margin-top: 2em;
+    }
+
+    /*resetting the top of page*/
+    .experience{
+        margin-top: 5em;   
+    }
+
+    /*resetting the top of pages
+    with the menu toggled on*/
+    #menu-toggle:checked ~ .experience{
+        margin-top: -100px;
+        z-index: -10;
+    }
+}

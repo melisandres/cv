@@ -8,21 +8,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Melisandre Schofield e2395207">
-    <link rel="stylesheet" href="{{asset('styles/style.css')}}">
+    <link rel="stylesheet" href="{{asset('styles/main.css')}}">
     <title>@yield('title')</title>
 
 </head>
 <body>
-    <header></header>
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-button-container">
-        <span class="menu-button">☰</span>
+        <span class="menu-button">&zwnj;</span>
     </label>
     <nav class="withFog">
         <ul role="menu">
-            <li> <a  @if($__env->yieldContent('title') == 'Accueil | CV') class="active" @endif href="{{route('acceuil')}}"> Acceuil </a></li>
-            <li> <a @if($__env->yieldContent('title') == 'Education | CV') class="active" @endif href="{{route('education')}}"> Éducation </a></li>
-            <li class="dropbtn">   <a @if($__env->yieldContent('title') == 'Experience | CV') class="active" @endif href="{{route('experience')}}"> Experience</a>
+            <li> <a  @if($__env->yieldContent('title') == 'Projets | Mélisandre Schofield') class="active" @endif href="{{route('projects')}}"> Projets </a></li>
+            <li> <a  @if($__env->yieldContent('title') == 'Bio | Mélisandre Schofield') class="active" @endif href="{{route('bio')}}"> Biographie </a></li>
+            <li> <a @if($__env->yieldContent('title') == 'Études | Mélisandre Schofield') class="active" @endif href="{{route('education')}}"> Études </a></li>
+            <li class="dropbtn">   <a @if($__env->yieldContent('title') == 'Réalisations | Mélisandre Schofield') class="active" @endif href="{{route('experience')}}"> Réalisations </a>
                 <input type="checkbox" id="submenu-toggle">
                 <label for="submenu-toggle" class="submenu-button-container">
                     <span class="submenu-button"></span>
@@ -33,7 +33,7 @@
                     <li class="dropdown-item"><a href="{{route('experience')}}#autre">Autres</a></li>
                 </ul>
             </li>
-            <li> <a @if($__env->yieldContent('title') == 'Contact | CV') class="active" @endif href="{{route('contact')}}"> Contact </a></li>
+            <li> <a @if($__env->yieldContent('title') == 'Contact | Mélisandre Schofield') class="active" @endif href="{{route('contact')}}"> Contact </a></li>
         </ul>
     </nav>
         <!-- content -->

@@ -1,0 +1,31 @@
+.project{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0.75em;
+    max-width: 100%;
+}
+
+.project + .project{
+    margin-top: 6em;
+}
+
+.project p {
+    max-width: 35ch;
+}
+
+.project{
+    justify-content: space-around;
+}
+
+/**/
+@media screen and (max-width:720px) {
+    .project div{
+        flex: 1;
+    }
+}
+
+@media screen and (min-width:720px) {
+    .project div{
+        width: 550px;
+    }   
+}

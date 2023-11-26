@@ -1,0 +1,6 @@
+/*this is used in the contact page*/
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 

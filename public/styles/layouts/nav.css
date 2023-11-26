@@ -1,0 +1,225 @@
+/*the hamburger*/
+.menu-button-container, .menu-button, .submenu-button-container, .submenu-button {
+    display: none;
+    position: absolute;
+    font-size: 2.5em;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.menu-button-container, .menu-button{
+    top: 0;
+}
+
+#menu-toggle, #submenu-toggle{
+    display: none;
+}
+
+/*styling for the menu*/
+nav > ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
+    padding: 8px 16px 100px 8px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(white 40%, transparent 100%);
+    height: 140px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/*to add a bit more haze to the menu on the index page*/
+nav.withFog{
+    background-image: linear-gradient(white 80%, transparent 100%);
+}
+
+/*styling for the menu elements*/
+ nav > ul > li {
+    display: inline;
+    position: relative;
+    pointer-events: all;
+}
+
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 30px 16px;
+    font-size: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;  
+}
+
+.dropdown-item > a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 27px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;  
+}
+
+nav > ul > li > a:hover{
+    background-color:  rgb(0, 0, 0, 0.2);
+    color: rgb(255, 255, 255);
+    border-radius: 0 0 150px 150px;
+}
+
+nav > ul > li > a.active{
+    color: hsl(329, 49%, 39%);
+    border-radius: 0 0 150px 150px;
+    background-color: #eeeeed;
+}
+  
+.dropbtn:hover > ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/*styling for the submenu*/
+nav > ul > li > ul {
+    display: none;
+    position: relative;
+    z-index: 99;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    list-style-type: none;
+    padding-left: 16px;
+  }
+
+/*styling for the submenu elements*/
+nav > ul > li > ul > li > a {
+    border-top: lightgray solid 1px;
+    position: relative;
+    background-image: radial-gradient(white 70%, transparent);
+}
+
+nav > ul > li > ul > li > a:hover {
+    color:hotpink;
+}
+
+
+@media screen and (max-width:800px){
+    nav > ul > li > a{
+        font-size: 3.7vw;
+    }
+}
+
+/*On small screens, all the content should appear
+as a column*/
+@media screen and (max-width:720px) {
+    /*styling the mobile menu*/
+    .menu-button-container, .menu-button{
+        display: block;
+        right: 0;
+        border-bottom-left-radius: 100%;
+        width : 125px;
+        background-color: rgb(148, 50, 101, 0.3);
+    }
+
+    .submenu-button{
+        display: block;
+        text-align: center;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 100;
+        color: rgb(148, 50, 101);
+    }
+
+    .submenu-button-container {
+        display: flex;
+        top: -0.5em;
+        left: 8em;
+    }
+
+    #menu-toggle ~ nav > ul, #submenu-toggle ~ ul{
+        display: none;
+    }
+
+    #menu-toggle:checked ~ nav > ul, #submenu-toggle:checked ~ ul {
+        display: flex;
+    }
+
+    nav > ul > li > a{
+        display: flex;
+        width: 50vw;
+        font-size: 50px;
+        padding: 0 0 0 1em;
+        border-top: 1px solid lightslategray;
+    }
+    
+    /*the class withFog has been created in order
+    to fix a styling issue that occurs with the 
+    submenu is open--the gradient is no longer 
+    visible on the bottom edge. But I haven't been 
+    able to locate the problem*/
+    #menu-toggle:checked ~ nav.withFog > ul {
+        height: fit-content;
+        background-image: linear-gradient( rgb(240, 240, 247) 75%,  transparent 100%);
+        padding: 0 0 4em 0;
+    }
+
+    nav > ul{
+        position: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100vw;
+        height: fit-content;
+        background-image: linear-gradient( rgb(240, 240, 247) 75%,  transparent 100%);
+        padding: 0 0 3em 0;
+    }
+
+    .dropdown-item > a{
+        font-size: 50px;
+        padding-left: 40vw;
+        background-image: none;
+    }
+    
+    nav > ul > li  a:hover {
+        background-color:  rgb(0, 0, 0, 0.01);
+        color: hotpink;
+        border-radius: 0 0 0 0; 
+    }
+    
+    nav > ul > li > a.active{
+        border-radius: 0 0 0 0;
+    }
+
+    /*this is used in each page differently
+    but it allows the blending of the menu
+    into the page... I think*/
+    #menu-toggle:checked ~ main{
+        margin-top: 20px;
+        z-index: -10;
+    }
+
+    /*place the hamburger*/
+    #menu-toggle + .menu-button-container .menu-button::before{
+        content:"☰";
+        position: absolute;
+    }
+
+
+    /*replace the hamburger with an X*/
+    #menu-toggle:checked + .menu-button-container .menu-button::before{
+        content:"✕";
+        position: absolute;
+    }
+    
+
+    /*the flex on the contact body is making 
+    the form innaccessible*/
+    .noFlex{
+        display: block !important;
+    }
+
+    .noFlex main{
+        min-height: 100vh;
+    }
+}
+
+    /*I had some help for the shadows around ny form, with minor adjustments.*/
+    /*https://getcssscan.com/css-box-shadow-examples by ls grafics*/

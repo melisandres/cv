@@ -1,0 +1,33 @@
+.name {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 80px;
+}
+
+.name div {
+    flex: 1;
+    height: 1px;
+    background-color: #333;
+    background: repeating-linear-gradient(90deg, transparent, transparent 10px, #333 10px, #333 20px);
+}
+.name h1+div{
+    flex: 8;
+}
+
+@media screen and (max-width:500px) {
+    .name div {
+        flex: 1;
+        height: 0px;
+    }
+    .name h1+div{
+        flex: 8;
+    }
+    .name{
+        margin-left: 50px
+    }
+    
+}
+

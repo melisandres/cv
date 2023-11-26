@@ -1,0 +1,24 @@
+/*base*/
+@import url(base/base.css);
+@import url(base/variables.css);
+
+/*styles unedited*/
+@import url(style.css);
+
+/*layouts*/
+@import url(layouts/nav.css);
+@import url(layouts/projects.css);
+@import url(layouts/contact.css);
+@import url(layouts/education.css);
+@import url(layouts/experience.css);
+@import url(layouts/bio.css);
+
+/*components*/
+@import url(components/form.css);
+@import url(components/edu.css);
+@import url(components/project.css);
+
+/*atoms*/
+@import url(atoms/bigyear.css);
+@import url(atoms/circle-img.css);
+@import url(atoms/name.css);

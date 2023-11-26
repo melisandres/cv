@@ -1,0 +1,23 @@
+.bigyear{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    color: #eeeeed;
+    position: absolute;
+    margin-top: -0.2em;
+    z-index: -1;
+    font-size: 20vw;
+}
+
+
+@media screen and (max-width:720px) {
+    .bigyear{
+        text-align: center !important;
+        font-size: 200px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .bigyear{
+        font-size: 40vw;
+    }
+}

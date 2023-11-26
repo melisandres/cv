@@ -1,0 +1,23 @@
+/*set up margins for text content, which appear in index and in experience*/
+.bio section{
+    max-width: 75ch;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+}
+.bio div{
+    background-image: url('../../img/tiling-animals.jpeg');
+    background-repeat: repeat; /* Tiling the background image */
+    background-position: 500px 700px;
+    background-size: contain;
+    width: 100%;
+    height: 325px;
+}
+
+
+
+@media screen and (max-width:720px) {
+    #menu-toggle:checked ~ .bio{
+        margin-top: -65px;
+    }
+}

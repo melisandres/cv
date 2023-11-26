@@ -1,0 +1,114 @@
+/*to ensure things are contained in flex*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    margin-left: 0;
+    /* padding-top: 5em; */
+    margin-top: 0;
+    width: 100%;
+    min-height: 100vh; 
+}
+
+main{
+    flex: 1;
+}
+
+/*styling for links that 
+are not in the menu*/
+a:not(nav a) {
+    color: #bfbfbf;
+    text-decoration: none;
+}
+
+a:visited:not(nav a){
+    color: #943265;
+    text-decoration: none;
+}
+
+a:hover:not(nav a) {
+    color: #000000;
+    text-decoration: none;
+}
+
+/*this is used in the index page, for the banner image*/
+picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+picture > img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*styling for titles*/
+h1, h2, h3, h4{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+h2{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+    font-size: 60px;
+}
+
+h3{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+h4{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    font-size: 38px;
+    text-align: center;
+}
+
+p{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    max-width: 75ch;
+}
+
+footer{
+    text-align: center;
+    padding-top: 20px;
+}
+
+@media screen and (max-width:720px) {
+     /*display flex created issues with being able to access
+    the form, But only when the menu is open...*/
+    body{
+        display: flex;
+        flex-flow: column wrap;
+        padding-top: 0;
+    }
+
+    main{
+        display: flex;
+        flex-flow: column wrap;
+        top: 0px;
+    }
+
+    p{
+        width: 90vw;
+        /* text-align: justify; */
+    }
+}

@@ -1,5 +1,5 @@
 @extends('master')
-@section('title', 'Contact | CV')
+@section('title', 'Contact | Mélisandre Schofield')
 @section('content')
     <main  class="contact">
         <section>

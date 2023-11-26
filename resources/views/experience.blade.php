@@ -1,7 +1,13 @@
 @extends('master')
-@section('title', 'Experience | CV')
+@section('title', 'Réalisations | Mélisandre Schofield')
 @section('content')
+<!--     <div class="name">
+        <div></div>
+        <h1>Melisandre Schofield</h1>
+        <div></div>
+    </div> -->
     <main class="experience">
+
         <section >
             <h3>intro</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab reprehenderit repudiandae debitis ullam eligendi, modi in enim laborum itaque aliquid dolor numquam asperiores maiores mollitia nisi cumque dolores voluptates voluptate. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis culpa, quidem eius, ipsa sed ab repellendus rem corporis distinctio cumque perspiciatis debitis. Cupiditate ad aliquam enim iusto eum at commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis at quod libero voluptatum fuga vitae ea cum! Veniam nulla animi ut ipsam, dolorum esse enim atque excepturi dolorem eum? Tenetur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores sequi deserunt adipisci voluptas tempora distinctio quod, soluta assumenda totam ab quaerat. Quisquam inventore cumque qui aspernatur voluptates quod. Eos, deleniti?</p>

@@ -6,8 +6,13 @@ use Illuminate\Http\Request;
 
 class ResumeController extends Controller
 {
+
     public function index(){
-        return view('acceuil');
+        return view('projects');
+    }
+
+    public function bio(){
+        return view('bio');
     }
 
     public function education(){
@@ -22,9 +27,8 @@ class ResumeController extends Controller
         return view('contact');
     }
 
-    public function message(Request $request){
-        //return $request->name;
 
+    public function message(Request $request){
         return view('contact', ['data' => $request]);
     }
     //

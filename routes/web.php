@@ -15,10 +15,11 @@ use App\Http\Controllers\ResumeController;
 */
 
 Route::get('/', function () {
-    return view('acceuil');
+    return view('projects');
 });
 
-Route::get('/acceuil', [ResumeController::class, 'index'])->name('acceuil');
+Route::get('/projects', [ResumeController::class, 'index'])->name('projects');
+Route::get('/bio', [ResumeController::class, 'bio'])->name('bio');
 Route::get('/education', [ResumeController::class, 'education'])->name('education');
 Route::get('/experience', [ResumeController::class, 'experience'])->name('experience');
 Route::get('/contact', [ResumeController::class, 'contact'])->name('contact');

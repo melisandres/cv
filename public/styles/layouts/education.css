@@ -1,0 +1,9 @@
+@media screen and (max-width:720px) {
+
+    /*resetting the top of page
+    with the menu toggled on*/
+    #menu-toggle:checked ~ .education{
+        margin-top: -170px;
+        z-index: -10;
+    }
+}
