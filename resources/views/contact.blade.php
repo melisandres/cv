@@ -1,41 +1,38 @@
 @extends('master')
-@section('title', 'Contact | Mélisandre Schofield')
+@php
+    $pageTitle = __('message.contact.title');  
+@endphp
+@section('title', $pageTitle)
 @section('content')
     <main  class="contact">
         <section>
-            <h1>contactez Mélisandre</h1>
+            <h1>@lang('message.contact.greeting')</h1>
             @isset($data)
-                <p> nom: <span>{{ $data->nom ?? ''}}</span> </p>
-                <p> prenom: <span>{{ $data->prenom ?? ''}}</span> </p>
-                <p> couriel: <span>{{ $data->couriel ?? ''}}</span> </p>
-                <p> message: <span>{{ $data->message ?? ''}}</span> </p>
+                <p> @lang('message.contact.name'): <span>{{ $data->nom ?? ''}}</span> </p>
+                <p> @lang('message.contact.last-name'): <span>{{ $data->prenom ?? ''}}</span> </p>
+                <p> @lang('message.contact.email'): <span>{{ $data->couriel ?? ''}}</span> </p>
+                <p> @lang('message.contact.message'): <span>{{ $data->message ?? ''}}</span> </p>
                 <p> tier: <span>{{ $data->tier ?? ''}}</span> </p>
             @else
             <form method="post">
                 @csrf
                 <label for="nom"></label>
-                <input type="text" id="nom" name="nom" placeholder="nom">
+                <input type="text" id="nom" name="nom" placeholder="@lang('message.contact.last-name')">
                 <label for="prenom"></label>
-                <input type="text" id="prenom" name="prenom" placeholder="prenom">
+                <input type="text" id="prenom" name="prenom" placeholder="@lang('message.contact.name')">
                 <label for="email"></label>
-                <input type="email" id="email" name="couriel" placeholder="email">
+                <input type="email" id="email" name="couriel" placeholder="@lang('message.contact.email')">
                 <label for="message"></label>
-                <textarea name="message" id="message" rows="10" cols="60" placeholder="ecrivez un message pour melisandre">Soyons amis!</textarea>
+                <textarea name="message" id="message" rows="10" cols="60" placeholder="@lang('message.contact.message-placeholder')">@lang('message.contact.message-initial')</textarea>
                 <select name="tier" id="tier" required>
-                    <option value="">selectioner le tier voulu</option>
-                    <optgroup label="options de base">
-                        <option value="tier1.1">site sans html</option>
-                        <option value="tier1.2">site avec moin d'une page</option>
-                        <option value="tier1.3" selected>site sans addresse</option>
+                    <option value="">@lang('message.contact.selectbox-message')</option>
+                    @foreach(__('message.contact.option-groups') as $key => $value)
+                    <optgroup label="{{ $key }}">
+                        @foreach($value as $optkey => $optvalue)
+                        <option value="{{ $optkey }}">{{ $optvalue }}</option>
+                        @endforeach
                     </optgroup>
-                    <optgroup label="options exotiques">
-                        <option value="tier2.1">site en nuage</option>
-                        <option value="tier2.2">site en papier</option>
-                    </optgroup>
-                    <optgroup label="options executifs">
-                        <option value="tier3.1">site, images, et texts vivants</option>
-                        <option value="tier3.2">Intelligence artificielle inclus</option>
-                    </optgroup>
+                    @endforeach
                 </select>
                 <input type="submit">
             </form>

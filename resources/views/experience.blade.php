@@ -1,26 +1,23 @@
 @extends('master')
-@section('title', 'Réalisations | Mélisandre Schofield')
+@php
+    $pageTitle = __('message.achievements.title');  
+@endphp
+@section('title', $pageTitle)
 @section('content')
-<!--     <div class="name">
-        <div></div>
-        <h1>Melisandre Schofield</h1>
-        <div></div>
-    </div> -->
     <main class="experience">
 
         <section >
-            <h3>intro</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab reprehenderit repudiandae debitis ullam eligendi, modi in enim laborum itaque aliquid dolor numquam asperiores maiores mollitia nisi cumque dolores voluptates voluptate. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis culpa, quidem eius, ipsa sed ab repellendus rem corporis distinctio cumque perspiciatis debitis. Cupiditate ad aliquam enim iusto eum at commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis at quod libero voluptatum fuga vitae ea cum! Veniam nulla animi ut ipsam, dolorum esse enim atque excepturi dolorem eum? Tenetur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores sequi deserunt adipisci voluptas tempora distinctio quod, soluta assumenda totam ab quaerat. Quisquam inventore cumque qui aspernatur voluptates quod. Eos, deleniti?</p>
-
+            <h3>@lang('message.achievements.sidepanel-title')</h3>
+            <p>@lang('message.achievements.sidepanel-text')</p>
         </section>
         <section>
             <ul>
                 <li>
-                    <h2 id="bourses">bourses</h2>
+                    <h2 id="bourses">@lang('message.achievements.grants')</h2>
                     <ul>
                         <li>
                             <h3>lafin</h3>
-                            <p>Certaine de l’affection de Julien, peut-être sa vertu eût trouvé des forces contre lui. Tremblante de le perdre à jamais, sa passion l’égara jusqu’au point de reprendre la main de Julien, que, dans sa distraction, il avait laissée appuyée sur le dossier d’une chaise. Cette action réveilla ce jeune ambitieux : il eût voulu qu’elle eût pour témoins tous ces nobles si fiers qui, à table, lorsqu’il était au bas bout avec les enfants, le regardaient avec un sourire si protecteur. Cette femme ne peut plus me mépriser : dans ce cas, se dit-il, je dois être sensible à sa beauté ; je me dois à moi-même d’être son amant. Une telle idée ne lui fût pas venue avant les confidences naïves faites par son ami. link: <a class="innerlink" href="http://www.la-fin.org" target="_blank">lafin</a></p>
+                            <p>Certaine de l’affection de Julien, peut-être sa vertu eût trouvé des forces contre lui. Tremblante de le perdre à jamais, sa passion l’égara jusqu’au point de reprendre la main de Julien, que, dans sa distraction, il avait laissée appuyée sur le dossier d’une cas, se dit-il, je dois être sensible à sa beauté ; je me dois à moi-même d’être son amant. Une telle idée ne lui fût pas venue avant les confidences naïves faites par son ami. link: <a class="innerlink" href="http://www.la-fin.org" target="_blank">lafin</a></p>
                         </li>
                             <li>
                             <h3>sky paint</h3>
