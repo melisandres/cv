@@ -10,6 +10,7 @@
     <meta name="author" content="Melisandre Schofield e2395207">
     <link rel="stylesheet" href="{{asset('styles/main.css')}}">
     <title>@yield('title') | Mélisandre Schofield</title>
+    <script src="{{ asset('language-switcher.js') }}" defer></script>
 
 </head>
 <body>
@@ -18,6 +19,13 @@
         <span class="menu-button">&zwnj;</span>
     </label>
     <nav class="withFog">
+            <div>
+                <label for="language-switcher"></label>
+                <select id="language-switcher" onchange="changeLanguage(this.value)">
+                    <option value="en" @if(App::getLocale() == 'fr') selected @endif>FR</option>
+                    <option value="fr" @if(App::getLocale() == 'en') selected @endif>EN</option>
+                </select>
+            </div>
         <ul role="menu">
             <li> 
                 <a  @if($__env->yieldContent('title') == __('message.nav.projects')) class="active" @endif href="{{route('projects')}}">@lang('message.nav.projects')</a>
