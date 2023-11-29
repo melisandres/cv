@@ -22,8 +22,8 @@
             <div>
                 <label for="language-switcher"></label>
                 <select id="language-switcher" onchange="changeLanguage(this.value)">
-                    <option value="en" @if(App::getLocale() == 'fr') selected @endif>FR</option>
-                    <option value="fr" @if(App::getLocale() == 'en') selected @endif>EN</option>
+                    <option value="fr" @if(App::getLocale() == 'fr') selected @endif>FR</option>
+                    <option value="en" @if(App::getLocale() == 'en') selected @endif>EN</option>
                 </select>
             </div>
         <ul role="menu">
