@@ -23,7 +23,8 @@ displayed side by side... unless its a small screen*/
     flex-basis: 50%;
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 1em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
 }
 
 /*this has an image as a child*/

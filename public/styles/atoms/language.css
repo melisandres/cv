@@ -1,0 +1,26 @@
+.language{
+    width: 75px;
+    height: 75px;
+    padding: 15px;
+    z-index: 100;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+/* Adjust the styling for the language picker */
+.language {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+/* Hide the language picker when the menu is open on small screens */
+@media screen and (max-width: 720px) {
+    #menu-toggle:checked ~ .language {
+        display: none;
+    }
+    #menu-toggle:not(:checked) ~ .language {
+        display: block;
+    }
+}

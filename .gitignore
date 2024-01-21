@@ -8,6 +8,9 @@
 .env
 .env.backup
 .env.production
+.env_onServer
+.htaccess_onServer
+server_onServer.php
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml

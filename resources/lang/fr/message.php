@@ -1,144 +1,144 @@
 <?php
 return [
     'nav' => [
-        'projects' => 'Projects',
-        'bio' => 'Biography',
-        'studies' => 'Studies',
-        'achievements' => 'Achievements',
+        'projects' => 'Projets',
+        'bio' => 'Biographie',
+        'studies' => 'Études',
+        'achievements' => 'Réalisations',
         'contact' => 'Contact',
-        'grants' => 'Grants',
-        'residencies' => 'Residencies',
-        'contest' => 'Contests',
-        'other' => 'Other',
+        'grants' => 'Bourses',
+        'residencies' => 'Résidences',
+        'contest' => 'Concours',
+        'other' => 'Autres',
     ],
 
     'bio' => [
-        'title' => 'Biography',
-        'bio' => "FR Mélisandre's forray into web development has been slow-building, through her explorations in interactive narrative/game design and her background in visual arts. Her art work consists of writing that oscillates between literature and media. Through her involvement with Lafin (the Liberal Arts Fictional Institute of Narrative: a fictional collective of artists and researchers), she has designed a series of poetic dream experiments, volunteered as an archivist, and written a few novels.",
+        'title' => 'Biographie',
+        'bio' => "Mélisandre s'est progressivement aventurée dans le domaine du développement web, explorant la narrativité interactive, la conception de jeux, et puisant dans son parcours artistique visuel. Elle a trouvé une passion pour la programation, et le dévelopement web full-stack. Son œuvre artistique se compose d'écrits qui naviguent entre littérature et média. Impliquée au sein de Lafin (l'Institut Académique Fictif d'Interprétations Narratologiques : un collectif fictif d'artistes et de chercheurs), elle a élaboré une série d'expérimentations pseudo-scientifiques sur les rêves, œuvré en tant qu'archiviste bénévole et rédigé quelques romans.",
     ],
 
     'projects' => [
-        'title' => 'Projects',
+        'title' => 'Projets',
         'projectList' => [
             'project1' => [
                 'name' => 'LAFIN',
                 'year' => 2023,
-                'details' =>[
-                    'currently re-deploying in HTML, CSS, JavaScript, and PHP', 
-                    'initially developed and maintained in Flash', 
-                    'presented at the Liminal Screen conference, Banff Centre (2008)',
-                    'developed at the Banff Centre Art and Language Residency (2007)',
-                    'grant recipient, NS Dept of Tourism, Culture, & Heritage (2004)'
-                    ],
-                'description' => 'A web-based fictional institute active in narrative experimentation.',
+                'details' => [
+                    'en redéployement HTML, CSS, JavaScript et PHP',
+                    'initialement développé et maintenu en Flash',
+                    'présenté à la conférence Liminal Screen, Banff Centre (2008)',
+                    'développé à la résidence Art and Language du Banff Centre (2007)',
+                    'récipiendaire d\'une subvention du ministère du Tourisme, de la Culture et du Patrimoine de la Nouvelle-Écosse (2004)'
+                ],
+                'description' => "Mon projet phare, LAFIN, explore l'expérimentation narrative à travers un institut fictif. Actuellement, je travaille sur son redéploiement.",
                 'link' => 'https://la-fin.org',
                 'image' => 'ANFIL.jpg',
-                'alt' => '', 
+                'alt' => '',
                 'ready' => true
             ],
             'project2' => [
                 'name' => 'STAMPEE',
                 'year' => 2023,
-                'details' =>[
-                    'HTML, CSS, PHP, MYSQL', 
-                    'created in class'
-                    ],
-                'description' => 'A fictional stamp auction website.',
+                'details' => [
+                    'HTML, CSS, PHP, MYSQL',
+                    'créé en classe'
+                ],
+                'description' => 'STAMPEE est un projet que j\'ai développé en classe, un site fictif d\'enchères de timbres.',
                 'link' => 'https://la-fin.org/stampee',
                 'image' => 'stampee.png',
-                'alt' => '', 
+                'alt' => '',
                 'ready' => true
             ],
             'project3' => [
                 'name' => 'TAG, NOW YOU WRITE',
                 'year' => 2023,
-                'details' =>[
-                    'HTML, CSS, PHP, MYSQL', 
-                    'JS, D3 library'
-                    ],
-                'description' => 'A collaborative writing game.',
+                'details' => [
+                    'HTML, CSS, PHP, MYSQL',
+                    'JS, bibliothèque D3'
+                ],
+                'description' => 'Un projet qui me tient à cœur, est un jeu d\'écriture collaborative.',
                 'link' => 'https://la-fin.org/tag',
                 'image' => '4ours.jpg',
-                'alt' => '', 
+                'alt' => '',
                 'ready' => true
             ],
             'project4' => [
                 'name' => 'HANGMAN-O-GRAM',
                 'year' => 2023,
-                'details' =>[
+                'details' => [
                     'HTML, CSS, PHP, MYSQL, JavaScript'
-                    ],
-                'description' => 'Send a secret "hangman" message to a friend.',
+                ],
+                'description' => 'Un projet amusant où vous pouvez envoyer des messages "pendus" secrets à vos amis.',
                 'link' => 'https://la-fin.org/hangman',
                 'image' => 'hangman.png',
-                'alt' => '', 
+                'alt' => '',
                 'ready' => true
             ],
             'project5' => [
                 'name' => 'LAMP LIGHTER',
                 'year' => 2017,
-                'details' =>[
-                    'made in unity', 
-                    'programmed in C#',
-                    'collaboration with artist K. Nakashima'
-                    ],
-                'description' => 'Play a scientist who manages street-lights to study their effects on city birds.',
+                'details' => [
+                    'fabriqué avec Unity',
+                    'programmé en C#',
+                    'en collaboration avec l\'artist K. Nakashima'
+                ],
+                'description' => 'Une expérience immersive où vous jouez le rôle d\'un scientifique gérant les lampadaires pour étudier leur impact sur les oiseaux de la ville.',
                 'link' => 'https://melisandre.itch.io/lamp-lighter',
                 'image' => 'lamp-lighter.png',
-                'alt' => '', 
+                'alt' => '',
                 'ready' => true
             ],
             'project6' => [
                 'name' => 'HELP IS NEEDED',
                 'year' => 2017,
-                'details' =>[
-                    'made with Twine', 
-                    'a branching story built with hyperlinks and minimal conditions'
-                    ],
-                'description' => 'A simple text-game, a dream-like world where help is needed.',
+                'details' => [
+                    'réalisé avec Twine',
+                    'une histoire interactive construite avec des hyperliens et des conditions minimales'
+                ],
+                'description' => 'une aventure textuelle, plongeant les joueurs dans un monde onirique.',
                 'link' => 'https://melisandre.itch.io/help-is-needed',
                 'image' => 'trust.png',
-                'alt' => '', 
+                'alt' => '',
                 'ready' => true
             ],
             'project7' => [
                 'name' => 'STAIR SAFETY',
                 'year' => 2016,
-                'details' =>[
-                    'made with Knytt Stories', 
-                    'a narratively driven plateformer'
-                    ],
-                'description' => 'A simple narrative game, about the bureaucratic ills of accidents.',
+                'details' => [
+                    'réalisé avec Knytt Stories',
+                    'un jeu de plateforme narratif'
+                ],
+                'description' => 'Un jeu narratif simple qui explore les méandres de la bureaucratie après un accident.',
                 'link' => 'https://melisandre.itch.io/stair-safety',
                 'image' => 'stair-safety.png',
-                'alt' => '', 
+                'alt' => '',
                 'ready' => true
             ],
             'project8' => [
                 'name' => 'HOUSE GENERATOR',
                 'year' => 2016,
-                'details' =>[
-                    'made in Unity', 
-                    'programmed in C#',
-                    'drawn in pen'
-                    ],
-                'description' => 'A street drifts by—-its houses generated by a house generator.',
+                'details' => [
+                    'fabriqué avec Unity',
+                    'programmé en C#',
+                    'dessiné à la plume'
+                ],
+                'description' => 'Une rue défile avec des maisons assemblées une a une.',
                 'link' => 'https://melisandre.itch.io/houses',
                 'image' => 'houses.png',
-                'alt' => '', 
+                'alt' => '',
                 'ready' => true
             ],
         ],
-    ],
+    ],    
 
     'studies' => [
         'title' => 'Studies',
         'studiesList' => [
             'study1' => [
                 'program' => 'AEC conception et programmation de sites webs',
-                'program-truncated' => 'AEC web dev',
+                'program-truncated' => 'AEC development web',
                 'school' => 'College Maisonneuve',
-                'location' => 'Montreal Qc',
+                'location' => 'Montréal Qc',
                 'year' => 2024,
                 'image' => 'web.png',
                 'alt' => '',
@@ -148,7 +148,7 @@ return [
                 'program' => 'AEC Independent Video Game Design',
                 'program-truncated' => 'AEC design jeux vidéos',
                 'school' => 'College Dawson',
-                'location' => 'Montreal Qc',
+                'location' => 'Montréal Qc',
                 'year' => 2017,
                 'image' => 'game.png',
                 'alt' => '',
@@ -178,7 +178,7 @@ return [
     ],
 
     'achievements' => [
-        'title' => 'Achievements',
+        'title' => 'Réalisations',
         'sidepanel-title' => 'introduction',
         'sidepanel-text' => 'web developement is a way to pull together creative endevours and explorations. Although this list is a little expansive, it is meant to represent the things I am proud of.',
         'grants' => 'grants',
@@ -187,31 +187,29 @@ return [
 
     'contact' => [
         'title' => 'Contact',
-        'greeting' => 'Contact Mélisandre',
-        'name' => 'first name',
-        'last-name' => 'last name',
-        'email' => 'email',
+        'greeting' => 'Contactez Mélisandre',
+        'name' => 'prénom',
+        'last-name' => 'nom de famille',
+        'email' => 'courriel',
         'message' => 'message',
-        'message-placeholder' => 'Let\'s be friends!',
-        'message-initial' => 'Write a message for Mé.',
-        'selectbox-message' => 'Select one',
-        'submit' => 'send',
-        'option-groups' =>[
-            'base options' => [
-                'tier1.1' => 'site without html',
-                'tier1.2' => 'site with less than one page',
-                'tier1.3' => 'site with no address',
+        'message-placeholder' => 'Soyons amis !',
+        'message-initial' => 'Rédigez un message pour Mé.',
+        'selectbox-message' => 'Sélectionnez une option',
+        'submit' => 'envoyer',
+        'option-groups' => [
+            'options de bases' => [
+                'tier1.1' => 'site sans HTML',
+                'tier1.2' => 'site avec moins d\'une page',
+                'tier1.3' => 'site sans adresse',
             ],
-            'exotic options' =>[
-                'tier2.1' => 'site made of cloud',
-                'tier2.2' => 'site made of paper',
+            'options exotiques' => [
+                'tier2.1' => 'site fait de nuages',
+                'tier2.2' => 'site fait de papier',
             ],
-            'executive options' =>[
-                'tier3.1' => 'living texts and images',
-                'tier3.2' => 'a big bang',
+            'options executives' => [
+                'tier3.1' => 'textes et images vivants',
+                'tier3.2' => 'un big bang',
             ]
         ]
-
-        
     ]
 ];

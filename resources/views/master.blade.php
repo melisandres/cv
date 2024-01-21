@@ -14,19 +14,21 @@
 
 </head>
 <body>
+    <!-- Language Picker -->
+    
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-button-container">
         <span class="menu-button">&zwnj;</span>
     </label>
     <nav class="withFog">
-            <div>
+        <ul role="menu">
+            <li>
                 <label for="language-switcher"></label>
-                <select id="language-switcher" onchange="changeLanguage(this.value)">
+                <select class="language" id="language-switcher" onchange="changeLanguage(this.value)">
                     <option value="fr" @if(App::getLocale() == 'fr') selected @endif>FR</option>
                     <option value="en" @if(App::getLocale() == 'en') selected @endif>EN</option>
                 </select>
-            </div>
-        <ul role="menu">
+            </li>
             <li> 
                 <a  @if($__env->yieldContent('title') == __('message.nav.projects')) class="active" @endif href="{{route('projects')}}">@lang('message.nav.projects')</a>
             </li>
@@ -36,7 +38,7 @@
             <li> 
                 <a @if($__env->yieldContent('title') == __('message.nav.studies')) class="active" @endif href="{{route('education')}}">@lang('message.nav.studies')</a>
             </li>
-            <li class="dropbtn">   
+            <!-- <li class="dropbtn">   
                 <a @if($__env->yieldContent('title') == __('message.nav.achievements')) class="active" @endif href="{{route('experience')}}">@lang('message.nav.achievements')</a>
                 <input type="checkbox" id="submenu-toggle">
                 <label for="submenu-toggle" class="submenu-button-container">
@@ -47,7 +49,7 @@
                     <li class="dropdown-item"><a href="{{route('experience')}}#residences">@lang('message.nav.residencies')</a></li>
                     <li class="dropdown-item"><a href="{{route('experience')}}#autre">@lang('message.nav.other')</a></li>
                 </ul>
-            </li>
+            </li> -->
             <li> <a @if($__env->yieldContent('title') == __('message.nav.contact')) class="active" @endif href="{{route('contact')}}">@lang('message.nav.contact')</a></li>
         </ul>
     </nav>

@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     margin-left: 0.75em;
     max-width: 100%;
+    margin-right: 0.7em;
 }
 
 .project + .project{
