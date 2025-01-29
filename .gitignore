@@ -3,12 +3,14 @@
 /public/build
 /public/hot
 /public/storage
+/public/img
 /storage/*.key
 /vendor
 .env
 .env.backup
 .env.production
 .env_onServer
+.env_onLocal
 .htaccess_onServer
 server_onServer.php
 .phpunit.result.cache
@@ -20,3 +22,7 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+
+# OS specific
+.DS_Store
+Thumbs.db

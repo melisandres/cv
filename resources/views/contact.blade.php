@@ -6,8 +6,8 @@
 @section('content')
     <main  class="contact">
         <section>
-            <h1>@lang('message.contact.greeting')</h1>
             @isset($data)
+            <h1>@lang('message.contact.messageSent')</h1>
                 <div class="message">
                     <p> @lang('message.contact.name'): <span>{{ $data->nom ?? ''}}</span> </p>
                     <p> @lang('message.contact.last-name'): <span>{{ $data->prenom ?? ''}}</span> </p>
@@ -16,7 +16,14 @@
                     <p> tier: <span>{{ $data->tier ?? ''}}</span> </p>
                 </div>
             @else
+            <h1>@lang('message.contact.greeting')</h1>
+            
             <form method="post">
+                @if(session()->has('error'))
+                    <div class="error">
+                        {{ session('error') }}
+                    </div>
+                @endif
                 @csrf
                 <label for="nom"></label>
                 <input type="text" id="nom" name="nom" placeholder="@lang('message.contact.last-name')" value="{{ old('nom') }}">
@@ -29,7 +36,7 @@
                 @endif
                 <label for="message"></label>
                 <textarea name="message" id="message" rows="10" cols="60" placeholder="@lang('message.contact.message-placeholder')"> {{ old('message') ?? __('message.contact.message-initial') }}</textarea>
-                <select name="tier" id="tier" required>
+<!--                 <select name="tier" id="tier" required>
                     <option value="">@lang('message.contact.selectbox-message')</option>
                     @foreach(__('message.contact.option-groups') as $key => $value)
                     <optgroup label="{{ $key }}">
@@ -38,7 +45,7 @@
                         @endforeach
                     </optgroup>
                     @endforeach
-                </select>
+                </select> -->
                 <input type="submit">
             </form>
             @endisset

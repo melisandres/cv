@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{{asset('styles/main.css')}}">
     <title>@yield('title') | Mélisandre Schofield</title>
     <script src="{{ asset('language-switcher.js') }}" defer></script>
+    @vite(['resources/css/app.css', 'resources/js/main.js'])
 
 </head>
 <body>

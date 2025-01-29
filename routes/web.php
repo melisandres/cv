@@ -25,6 +25,9 @@ Route::get('/education', [ResumeController::class, 'education'])->name('educatio
 Route::get('/experience', [ResumeController::class, 'experience'])->name('experience');
 Route::get('/contact', [ResumeController::class, 'contact'])->name('contact');
 Route::post('/contact', [ResumeController::class, 'message'])->name('contact');
+Route::get('/test-error', function() {
+    abort(500);
+});
 
 //for language change
 Route::get('/change-language/{locale}', function ($locale) {

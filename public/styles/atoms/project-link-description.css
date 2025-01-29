@@ -1,0 +1,16 @@
+.pop-up-project-link-description {
+    position: fixed;
+    z-index: 1000;
+    background: black;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+}
+
+.pop-up-project-link-description.visible {
+    display: block;
+}
+
+.pop-up-project-link-description.hidden {
+    display: none;
+}

@@ -4,6 +4,6 @@
     with the menu toggled on*/
     #menu-toggle:checked ~ .education{
         margin-top: -170px;
-        z-index: -10;
+        z-index: 1;
     }
 }

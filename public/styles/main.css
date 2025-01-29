@@ -2,9 +2,6 @@
 @import url(base/base.css);
 @import url(base/variables.css);
 
-/*styles unedited*/
-@import url(style.css);
-
 /*layouts*/
 @import url(layouts/nav.css);
 @import url(layouts/projects.css);
@@ -12,11 +9,13 @@
 @import url(layouts/education.css);
 @import url(layouts/experience.css);
 @import url(layouts/bio.css);
+@import url(layouts/errorPage.css);
 
 /*components*/
 @import url(components/form.css);
 @import url(components/edu.css);
 @import url(components/project.css);
+@import url(components/modal.css);
 
 /*atoms*/
 @import url(atoms/bigyear.css);
@@ -24,3 +23,4 @@
 @import url(atoms/name.css);
 @import url(atoms/footer-links.css);
 @import url(atoms/language.css);
+@import url(atoms/project-link-description.css);

@@ -64,6 +64,6 @@ displayed side by side... unless its a small screen*/
     with the menu toggled on*/
     #menu-toggle:checked ~ .edu{
         margin-top: -170px;
-        z-index: -10;
+        z-index: 1;
     }
 }

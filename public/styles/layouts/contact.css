@@ -2,7 +2,7 @@
 .contact{
     justify-content: center;
     margin: 10% 20% 5% 20%;
-    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+/*     box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px; */
     margin-top: 5em;
 }
 
@@ -32,6 +32,11 @@ input, select, textarea{
     font-size: 15px;
 }
 
+.contact .error{
+    color: #a34775;
+    padding: 2em;
+}
+
 @media screen and (max-width:720px) {
     .contact{
         margin: 0;
@@ -43,7 +48,7 @@ input, select, textarea{
     with the menu toggled on*/
     #menu-toggle:checked ~ .contact{
         margin-top: -30px;
-        z-index: -10;
+        z-index: 1;
     }
 
 }
