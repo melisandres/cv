@@ -1,13 +1,32 @@
 export class Showcase {
     constructor() {
+        // Check if we're on the right page
+        const projectsSection = document.querySelector('.projects');
+        
+        if (!projectsSection) {
+            return;
+        }
+
         const dataElement = document.getElementById('portfolio-data');
-        this.galleries = JSON.parse(dataElement.textContent);
-        console.log(this.galleries);
+        
+        try {
+            const rawData = dataElement.textContent.trim();
+            
+            if (!rawData) {
+                console.error('Portfolio data is empty!');
+                return;
+            }
+            this.galleries = JSON.parse(rawData);
+
+        } catch (error) {
+            console.error('Error parsing gallery data:', error);
+            return;
+        }
         this.currentProject = null;
         this.currentGalleryIndex = 0;
         this.container = document.querySelector('.modal-container');
         this.content = document.querySelector('.modal-content');
-        console.log('Showcase initialized:', { container: this.container, content: this.content });
+
         if (!this.container) {
             console.log('No modal container found');
             return;
@@ -16,18 +35,16 @@ export class Showcase {
     }
 
     init() {
-        console.log('Adding event listeners');
         this.addEventListeners();
     }
 
     addEventListeners() {
         // Listen for clicks on circle images
         const circleImages = document.querySelectorAll('.circle-img');
-        console.log('Found circle images:', circleImages.length);
         
         circleImages.forEach(img => {
             img.addEventListener('click', (e) => {
-                e.preventDefault(); // Prevent any default link behavior
+                e.preventDefault();
                 this.openModal(e);
             });
         });
@@ -139,32 +156,17 @@ export class Showcase {
         const currentImageElement = this.content.querySelector('.modal-image.current');
 
         if (upcomingImage && currentImageElement) {
-            // Start by fading out current image
-            /* currentImageElement.classList.add('fade-out'); */
-
             // Set up new image but keep it hidden
             upcomingImage.src = imagePath;
             upcomingImage.alt = currentImage.alt || '';
 
             // Once the new image is loaded
             upcomingImage.onload = () => {
-                // Wait for fade-out to complete before starting fade-in
-/*                 setTimeout(() => { */
-                    // Add fade-in to upcoming image
-                    /* upcomingImage.classList.add('fade-in'); */
-
-                    // After fade-in completes
-/*                     setTimeout(() => { */
-                        // Swap positions
-                        /* currentImageElement.classList.remove('fade-out'); */
                         currentImageElement.classList.replace('current', 'upcoming');
                         currentImageElement.src = '';
                         currentImageElement.alt = '';
 
                         upcomingImage.classList.replace('upcoming', 'current');
-                        /* upcomingImage.classList.remove('fade-in'); */
-/*                     }, 6); */ // Match your CSS transition time
-/*                 }, 5);  */// Half the transition time for a smoother sequence
             };
         }
     }

@@ -27,4 +27,14 @@ class Handler extends ExceptionHandler
             //
         });
     }
+
+    public function render($request, Throwable $e)
+    {
+        if ($this->isHttpException($e)) {
+            // This will look for views in resources/views/errors/{code}.blade.php
+            return $this->renderHttpException($e);
+        }
+
+        return parent::render($request, $e);
+    }
 }

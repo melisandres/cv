@@ -1,4 +1,4 @@
-.error {
+.errorPage {
     text-align: center;
     padding: 50px 20px;
     margin-top: 15em;
@@ -9,22 +9,22 @@
 }
 
 
-.error h1 {
+.errorPage h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-.error p {
+.errorPage p {
     margin-bottom: 2rem;
 }
 
-.error a {
+.errorPage a {
     display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     /* Add your theme colors */
 }
-.error ~ footer {
+.errorPage ~ footer {
     display: none;
 }

@@ -14,8 +14,10 @@
     foreach ($projectList as $project) {
         if (isset($project['gallery']) && isset($project['name'])) {
             $galleries[$project['name']] = $project['gallery'];
+            error_log("Added gallery for project: " . $project['name']);
         }
     }
+    error_log("Total galleries: " . count($galleries));
 @endphp
 @section('title', $pageTitle)
 @section('content')
@@ -96,7 +98,7 @@
             @endforEach
         </section>
     </main>
+    <script id="portfolio-data" type="application/json">
+        {!! json_encode($galleries) !!}
+    </script>
     @endsection
-<script id="portfolio-data" type="application/json">
-    {!! json_encode($galleries) !!}
-</script>

@@ -270,12 +270,12 @@ return [
                     'une histoire interactive construite avec des hyperliens et des conditions minimales'
                 ],
                 'description' => 'une aventure textuelle, plongeant les joueurs dans un monde onirique.',
-                'link' => 'https://melisandre.itch.io/help-is-needed',
+                'link' => '',
                 'image' => 'trust.png',
                 'alt' => '',
                 'ready' => true,
                 'github' => '',
-                'itchio' => '',
+                'itchio' => 'https://melisandre.itch.io/help-is-needed',
                 'video' => '',
                 'moreInfo' => '',
                 'gallery' => [
@@ -299,12 +299,12 @@ return [
                     'un jeu de plateforme narratif'
                 ],
                 'description' => 'Un jeu narratif simple qui explore les méandres de la bureaucratie après un accident.',
-                'link' => 'https://melisandre.itch.io/stair-safety',
+                'link' => '',
                 'image' => 'stair-safety.png',
                 'alt' => '',
                 'ready' => true,
                 'github' => '',
-                'itchio' => '',
+                'itchio' => 'https://melisandre.itch.io/stair-safety',
                 'video' => '',
                 'moreInfo' => '',
                 'gallery' => [
@@ -344,12 +344,12 @@ return [
                     'dessiné à la plume'
                 ],
                 'description' => 'Une rue défile avec des maisons assemblées une a une.',
-                'link' => 'https://melisandre.itch.io/houses',
+                'link' => '',
                 'image' => 'houses.png',
                 'alt' => '',
                 'ready' => true,
                 'github' => '',
-                'itchio' => '',
+                'itchio' => 'https://melisandre.itch.io/houses',
                 'video' => '',
                 'moreInfo' => '',
                 'gallery' => [
@@ -431,8 +431,8 @@ return [
         'last-name' => 'nom de famille',
         'email' => 'courriel',
         'message' => 'message',
-        'message-placeholder' => 'Soyons amis !',
-        'message-initial' => 'Rédigez un message pour Mé.',
+        'message-placeholder' => 'Rédigez un message pour Mé.',
+        'message-initial' => '',
         'selectbox-message' => 'Sélectionnez une option',
         'submit' => 'envoyer',
         'option-groups' => [

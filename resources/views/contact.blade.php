@@ -13,7 +13,7 @@
                     <p> @lang('message.contact.last-name'): <span>{{ $data->prenom ?? ''}}</span> </p>
                     <p> @lang('message.contact.email'): <span>{{ $data->courriel ?? ''}}</span> </p>
                     <p> @lang('message.contact.message'): <span>{{ $data->message ?? ''}}</span> </p>
-                    <p> tier: <span>{{ $data->tier ?? ''}}</span> </p>
+<!--                     <p> tier: <span>{{ $data->tier ?? ''}}</span> </p> -->
                 </div>
             @else
             <h1>@lang('message.contact.greeting')</h1>
@@ -30,12 +30,12 @@
                 <label for="prenom"></label>
                 <input type="text" id="prenom" name="prenom" placeholder="@lang('message.contact.name')" value="{{ old('prenom') }}">
                 <label for="email"></label>
-                <input type="email" required id="email" name="courriel" placeholder="@lang('message.contact.email')" value="{{ old('email') }}">
+                <input type="email" required id="email" name="courriel" placeholder="@lang('message.contact.email')" value="{{ old('courriel') }}">
                 @if($errors->has('courriel'))
                     <span class="error">{{$errors->first('courriel')}}</span>
                 @endif
                 <label for="message"></label>
-                <textarea name="message" id="message" rows="10" cols="60" placeholder="@lang('message.contact.message-placeholder')"> {{ old('message') ?? __('message.contact.message-initial') }}</textarea>
+                <textarea name="message" id="message" rows="10" cols="60" placeholder="@lang('message.contact.message-placeholder')">{{ old('message', __('message.contact.message-initial')) }}</textarea>
 <!--                 <select name="tier" id="tier" required>
                     <option value="">@lang('message.contact.selectbox-message')</option>
                     @foreach(__('message.contact.option-groups') as $key => $value)

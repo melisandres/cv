@@ -1,8 +1,9 @@
 export class ProjectLinkDescription {
     constructor() {
         this.projectLinks = document.querySelectorAll('[data-description]');
-        console.log('POPUP', this.popup);
-        console.log('PROJECT LINKS', this.projectLinks);
+        if (this.projectLinks.length === 0) {
+            return;
+        }
         this.init();
     }
 
@@ -28,7 +29,6 @@ export class ProjectLinkDescription {
             });
 
             link.addEventListener('mouseout', () => {
-                console.log('MOUSE OUT');
                 if (descriptionDiv && descriptionSpan) {
                     descriptionSpan.textContent = '';
                     descriptionDiv.classList.remove('active');

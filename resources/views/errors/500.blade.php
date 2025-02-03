@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('content')
-<main class="error">
+<main class="errorPage">
     <section>
         <h1>@lang('message.error.500.title')</h1>
         <p>@lang('message.error.500.description')</p>

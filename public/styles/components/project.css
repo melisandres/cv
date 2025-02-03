@@ -15,10 +15,11 @@
 }
 
 .project-links-description {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 1.5em;
+    width: fit-content;
 }
 
 .project-links-description.active{

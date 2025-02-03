@@ -440,8 +440,8 @@ return [
         'last-name' => 'last name',
         'email' => 'email',
         'message' => 'message',
-        'message-placeholder' => 'Let\'s be friends!',
-        'message-initial' => 'Write a message for Mé.',
+        'message-placeholder' => 'Write a message for Mé.',
+        'message-initial' => '',
         'selectbox-message' => 'Select one',
         'submit' => 'send',
         'option-groups' =>[

@@ -54,8 +54,8 @@ class ResumeController extends Controller
             // Log the error for administrators
             Log::error('Contact form email error: ' . $e->getMessage());
             
-            // Redirect back with error message
-            return back()->with('error', __('message.contact.emailError'));
+            // Redirect back with error message and old input
+            return back()->withInput()->with('error', __('message.contact.emailError'));
         }
     }
 }
