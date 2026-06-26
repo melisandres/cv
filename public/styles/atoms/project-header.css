@@ -10,7 +10,17 @@
     justify-self: center;
 }
 
+@media screen and (min-width: 720px) {
+    .project-header .project-title {
+        justify-self: start;
+    }
+}
+
 .project-header .circle-img {
+    justify-self: center;
+}
+
+.project-header .project-image-cell {
     justify-self: center;
 }
 
@@ -34,8 +44,11 @@
         grid-area: title;
     }
 
-    .project-header .circle-img {
+    .project-header .project-image-cell {
         grid-area: image;
+    }
+
+    .project-header .project-image-cell .circle-img {
         width: 100%;
         height: auto;
         aspect-ratio: 1;

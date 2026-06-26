@@ -31,7 +31,7 @@ return [
         'githubDescription' => 'view the code',
         'itchioDescription' => 'play the game',
         'videoDescription' => 'watch the video',
-        'galleryDescription' => 'view the gallery',
+        'galleryDescription' => 'see the gallery',
         'technicalDetails' => 'technical details',
         'technicalDetailsHint' => 'see technical details',
         'technicalDetailsHideHint' => 'hide technical details',

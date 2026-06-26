@@ -1,20 +1,22 @@
 export class ProjectLinkDescription {
     constructor() {
-        this.linkTriggers = document.querySelectorAll('.project-links a[data-description]');
+        this.hoverTriggers = document.querySelectorAll(
+            '.project-links a[data-description], .circle-img[data-description]'
+        );
         this.tabTriggers = document.querySelectorAll('.project-tabs [data-description]');
-        if (this.linkTriggers.length === 0 && this.tabTriggers.length === 0) {
+        if (this.hoverTriggers.length === 0 && this.tabTriggers.length === 0) {
             return;
         }
         this.init();
     }
 
     init() {
-        this.addLinkHoverListeners();
+        this.addHoverListeners(this.hoverTriggers);
         this.addTabListeners();
     }
 
-    addLinkHoverListeners() {
-        this.linkTriggers.forEach(trigger => {
+    addHoverListeners(triggers) {
+        triggers.forEach(trigger => {
             const { descriptionDiv, descriptionSpan } = this.getDescriptionElements(trigger);
             if (!descriptionDiv || !descriptionSpan) {
                 return;
