@@ -167,7 +167,7 @@ as a column*/
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        width: 100vw;
+        width: 100%;
         height: fit-content;
         background-image: linear-gradient( rgb(240, 240, 247) 75%,  transparent 100%);
         padding: 0 0 3em 0;

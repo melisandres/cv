@@ -2,7 +2,7 @@
 return [
     'nav' => [
         'projects' => 'Projets',
-        'bio' => 'Biographie',
+        'bio' => 'À propos...',
         'studies' => 'Études',
         'achievements' => 'Réalisations',
         'contact' => 'Contact',
@@ -13,8 +13,13 @@ return [
     ],
 
     'bio' => [
-        'title' => 'Biographie',
-        'bio' => "Mélisandre s'est progressivement aventurée dans le domaine du développement web, explorant la narrativité interactive, la conception de jeux, et puisant dans son parcours artistique visuel. Elle a trouvé une passion pour la programmation, et le développement web full-stack. Son œuvre artistique se compose d'écrits qui naviguent entre littérature et média. Impliquée au sein de Lafin (l'Institut Académique Fictif d'Interprétations Narratologiques : un collectif fictif d'artistes et de chercheurs), elle a élaboré une série d'expérimentations pseudo-scientifiques sur les rêves, œuvré en tant qu'archiviste bénévole et rédigé quelques romans.",
+        'title' => 'À propos...',
+        'bio' => "écriture • art • jeux • programmation • recherche<br>
+        <br>Mes projets se situent entre ces pratiques. Je poursuis actuellement une maîtrise et je m'intéresse à:<br>
+        <br>• la capacité du narratif à s'échapper de son cadre
+        <br>• aux façons dont nous pensons
+        <br>• avec la technologie
+        <br>• ensemble",
     ],
 
     'projects' => [
@@ -27,19 +32,23 @@ return [
         'itchioDescription' => 'jouer le jeu',
         'videoDescription' => 'regarder la vidéo',
         'galleryDescription' => 'voir la galerie',
+        'technicalDetails' => 'détails techniques',
+        'technicalDetailsHint' => 'voir les détails techniques',
+        'technicalDetailsHideHint' => 'masquer les détails techniques',
         'projectList' => [
             'project1' => [
-                'name' => 'TAG, YOU WRITE',
-                'year' => 2025,
+                'name' => 'PALINODES',
+                'year' => 2026,
                 'details' => [
                     'HTML, CSS, PHP, MYSQL, JS, bibliothèque D3',
                     'structure MVC',
                     'Visualisations interactives de données hiérarchiques avec D3.js et JS personnalisé, vues en arbre et liste pour la collaboration narrative. Auto-enregistrement des brouillons, sondages courts pour mises à jour, notifications, permissions, états de jeu, votes, textes lus/non lus, sauvegarde des états pour rafraîchissements fluides, génération de pages avec Twig/PHP, APIs REST pour données dynamiques.'
                 ],
                 'description' => 'Un projet qui me tient à cœur, un jeu d\'écriture collaborative. En développement.',
-                'link' => 'https://la-fin.org/tag-you-write',
+                'link' => 'https://palinodes.com',
                 'image' => 'tag-you-write.png',
                 'alt' => 'image de la page d\'accueil, lien vers la galerie',
+                'show' => true,
                 'ready' => true, 
                 'github' => 'https://github.com/melisandres/tag-you-write',
                 'itchio' => '',
@@ -92,6 +101,7 @@ return [
                 'link' => 'https://la-fin.org',
                 'image' => 'lafin.jpg',
                 'alt' => 'image de la page d\'accueil, lien vers la galerie',
+                'show' => true,
                 'ready' => true, 
                 'github' => 'https://github.com/melisandres/lafin',
                 'itchio' => '',
@@ -132,6 +142,7 @@ return [
                 'link' => 'https://la-fin.org/stampee',
                 'image' => 'stampee.png',
                 'alt' => '',
+                'show' => true,
                 'ready' => true, 
                 'github' => 'https://github.com/melisandres/stampee',
                 'itchio' => '',
@@ -171,7 +182,8 @@ return [
                 'link' => 'https://app-vino.ca',
                 'image' => 'vino.png',
                 'alt' => 'image du logo de l\'application, lien vers la galerie', 
-                'ready' => true, 
+                'show' => false,
+                'ready' => false, 
                 'github' => 'https://github.com/melisandres/app_vino',
                 'itchio' => '',
                 'video' => '',
@@ -219,6 +231,7 @@ return [
                 'link' => 'https://melisandre.itch.io/lamp-lighter',
                 'image' => 'lamp-lighter.png',
                 'alt' => '',
+                'show' => true,
                 'ready' => false, 
                 'github' => 'https://github.com/melisandres/Street-Lamps',
                 'itchio' => '',
@@ -273,6 +286,7 @@ return [
                 'link' => '',
                 'image' => 'trust.png',
                 'alt' => '',
+                'show' => true,
                 'ready' => true,
                 'github' => '',
                 'itchio' => 'https://melisandre.itch.io/help-is-needed',
@@ -302,6 +316,7 @@ return [
                 'link' => '',
                 'image' => 'stair-safety.png',
                 'alt' => '',
+                'show' => true,
                 'ready' => true,
                 'github' => '',
                 'itchio' => 'https://melisandre.itch.io/stair-safety',
@@ -347,6 +362,7 @@ return [
                 'link' => '',
                 'image' => 'houses.png',
                 'alt' => '',
+                'show' => true,
                 'ready' => true,
                 'github' => '',
                 'itchio' => 'https://melisandre.itch.io/houses',
@@ -371,7 +387,17 @@ return [
     'studies' => [
         'title' => 'Studies',
         'studiesList' => [
-            'study1' => [
+            'study0' => [
+                'program' => 'MA technologies éducatives',
+                'program-truncated' => 'MA technologies éducatives',
+                'school' => 'Université Concordia',
+                'location' => 'Montréal Qc',
+                'year' => 'NOW',
+                'image' => 'cat pencil.jpg',
+                'alt' => '',
+                'link' => '',
+            ],
+            'study1' => [   
                 'program' => 'AEC conception et programmation de sites webs',
                 'program-truncated' => 'AEC development web',
                 'school' => 'College Maisonneuve',
@@ -402,10 +428,10 @@ return [
                 'link' => 'https://cfccreates.com/content-hub/things-left-unsaid/',
             ],
             'study4' => [
-                'program' => 'Bac en arts plastic',
-                'program-truncated' => 'Bachelor of Fine Arts',
+                'program' => 'Bac en arts plastiques',
+                'program-truncated' => 'Bac en arts plastiques',
                 'school' => 'NSCAD U',
-                'location' => 'Halifax NS',
+                'location' => 'Halifax NÉ',
                 'year' => 2003,
                 'image' => 'media.png',
                 'alt' => '',

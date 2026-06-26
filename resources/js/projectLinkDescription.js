@@ -1,39 +1,79 @@
 export class ProjectLinkDescription {
     constructor() {
-        this.projectLinks = document.querySelectorAll('[data-description]');
-        if (this.projectLinks.length === 0) {
+        this.linkTriggers = document.querySelectorAll('.project-links a[data-description]');
+        this.tabTriggers = document.querySelectorAll('.project-tabs [data-description]');
+        if (this.linkTriggers.length === 0 && this.tabTriggers.length === 0) {
             return;
         }
         this.init();
     }
 
     init() {
-        this.addEventListeners();
-    }  
+        this.addLinkHoverListeners();
+        this.addTabListeners();
+    }
 
-    addEventListeners() {
-        this.projectLinks.forEach(link => {
-            // Find the closest parent div that contains both the link and description
-            const projectContainer = link.closest('.project');
+    addLinkHoverListeners() {
+        this.linkTriggers.forEach(trigger => {
+            const { descriptionDiv, descriptionSpan } = this.getDescriptionElements(trigger);
+            if (!descriptionDiv || !descriptionSpan) {
+                return;
+            }
 
-            // Find the description element that's a sibling of project-links
-            const descriptionDiv = projectContainer.querySelector('.project-links-description');
-            const descriptionSpan = descriptionDiv.querySelector('span');
-
-            link.addEventListener('mouseover', (e) => {
-                const description = link.getAttribute('data-description');
-                if (descriptionDiv && descriptionSpan) {
-                    descriptionSpan.textContent = description;
-                    descriptionDiv.classList.add('active');
-                }
+            trigger.addEventListener('mouseover', () => {
+                descriptionSpan.textContent = trigger.getAttribute('data-description');
+                descriptionDiv.classList.add('active');
             });
 
-            link.addEventListener('mouseout', () => {
-                if (descriptionDiv && descriptionSpan) {
-                    descriptionSpan.textContent = '';
-                    descriptionDiv.classList.remove('active');
+            trigger.addEventListener('mouseout', () => {
+                descriptionSpan.textContent = '';
+                descriptionDiv.classList.remove('active');
+            });
+        });
+    }
+
+    addTabListeners() {
+        this.tabTriggers.forEach(trigger => {
+            const projectContainer = trigger.closest('.project');
+            const { descriptionDiv, descriptionSpan } = this.getDescriptionElements(trigger);
+
+            if (!projectContainer || !descriptionDiv || !descriptionSpan) {
+                return;
+            }
+
+            trigger.addEventListener('mouseover', () => {
+                descriptionSpan.textContent = this.getTabHint(trigger, projectContainer);
+                descriptionDiv.classList.add('active');
+            });
+
+            trigger.addEventListener('mouseout', () => {
+                descriptionSpan.textContent = '';
+                descriptionDiv.classList.remove('active');
+            });
+
+            trigger.addEventListener('click', () => {
+                const isOpen = projectContainer.classList.toggle('details-open');
+                trigger.classList.toggle('active', isOpen);
+
+                if (descriptionDiv.classList.contains('active')) {
+                    descriptionSpan.textContent = this.getTabHint(trigger, projectContainer);
                 }
             });
         });
+    }
+
+    getTabHint(trigger, projectContainer) {
+        const isOpen = projectContainer.classList.contains('details-open');
+        const attribute = isOpen ? 'data-description-hide' : 'data-description';
+
+        return trigger.getAttribute(attribute);
+    }
+
+    getDescriptionElements(trigger) {
+        const projectContainer = trigger.closest('.project');
+        const descriptionDiv = projectContainer?.querySelector('.project-links-description');
+        const descriptionSpan = descriptionDiv?.querySelector('span');
+
+        return { descriptionDiv, descriptionSpan };
     }
 }

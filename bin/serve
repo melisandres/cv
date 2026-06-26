@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Run from project root (cv/), regardless of where composer invokes this script.
+cd "$(dirname "$0")/.."
+
+PHP82=""
+for candidate in \
+    "/opt/homebrew/opt/php@8.2/bin/php" \
+    "/usr/local/opt/php@8.2/bin/php"
+do
+    if [[ -x "$candidate" ]]; then
+        PHP82="$candidate"
+        break
+    fi
+done
+
+if [[ -z "$PHP82" ]]; then
+    echo "PHP 8.2 not found. Install with: brew install php@8.2" >&2
+    exit 1
+fi
+
+# Composer sets PHP_BINARY to its own PHP (often 8.4). Laravel's serve command
+# uses that for the built-in web server — override so the server runs on 8.2 too.
+export PATH="$(dirname "$PHP82"):$PATH"
+export PHP_BINARY="$PHP82"
+
+exec "$PHP82" artisan serve "$@"

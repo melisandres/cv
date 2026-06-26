@@ -1,0 +1,56 @@
+/*
+ * Year + project name stacked in one grid cell.
+ * Both use grid-area: 1 / 1 so they occupy the same space.
+ */
+.project-title {
+    display: grid;
+    max-width: 100%;
+}
+
+.project-title .bigyear {
+    grid-area: 1 / 1;
+    align-self: center;
+    justify-self: start;
+    position: static;
+    margin-top: -25px;
+    z-index: 0;
+    line-height: 1;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    color: #eeeeed;
+    font-size: 20vw;
+}
+
+.project-title .bigtitle {
+    grid-area: 1 / 1;
+    align-self: center;
+    justify-self: flex-start;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+    font-size: 80px;
+    line-height: 0.85;
+}
+
+@media screen and (max-width: 719px) {
+    .project-title .bigyear {
+        justify-self: center;
+        text-align: center;
+        font-size: 40vw;
+    }
+
+    .project-title .bigtitle {
+        font-size: 17vw;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .project-title .bigtitle {
+        font-size: clamp(36px, 17vw, 80px);
+    }
+}

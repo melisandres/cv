@@ -3,21 +3,25 @@
     $pageTitle = __('message.projects.title');  
     $link = __('message.projects.link');
     $coming = __('message.projects.coming-soon');
-    $projectList = __('message.projects.projectList');
+    $projectList = array_filter(
+        __('message.projects.projectList'),
+        fn ($project) => $project['show'] ?? true
+    );
     $galleryDescription = __('message.projects.galleryDescription');
     $linkDescription = __('message.projects.linkDescription');
     $githubDescription = __('message.projects.githubDescription');
     $itchioDescription = __('message.projects.itchioDescription');
     $videoDescription = __('message.projects.videoDescription');
     $moreInfoDescription = __('message.projects.moreInfoDescription');
+    $technicalDetails = __('message.projects.technicalDetails');
+    $technicalDetailsHint = __('message.projects.technicalDetailsHint');
+    $technicalDetailsHideHint = __('message.projects.technicalDetailsHideHint');
     $galleries = [];
     foreach ($projectList as $project) {
         if (isset($project['gallery']) && isset($project['name'])) {
             $galleries[$project['name']] = $project['gallery'];
-            error_log("Added gallery for project: " . $project['name']);
         }
     }
-    error_log("Total galleries: " . count($galleries));
 @endphp
 @section('title', $pageTitle)
 @section('content')
@@ -45,17 +49,26 @@
                 <div></div>
                 <h1>Melisandre Schofield</h1>
             </div>
-            @foreach(__('message.projects.projectList') as $key => $value)
+            @foreach($projectList as $key => $value)
                 <article class="project">
                     <div>
-                        <span class="bigyear">{{ $value['year'] }}</span>
-                        <h2>{{ $value['name'] }}</h2>
-                        <ul>
+                        <div class="project-header">
+                            <div class="project-title">
+                                <span class="bigyear">{{ $value['year'] }}</span>
+                                <h2 class="bigtitle">{{ $value['name'] }}</h2>
+                            </div>
+
+                            <img class="circle-img" src="img/{{$value['image']}}" alt="{{$value['alt']}}" data-project="{{$value['name']}}" data-description="{{ $galleryDescription }}">
+
+                            <p class="project-description">DESCRIPTION: {{$value['description']}}</p>
+                        </div>
+
+
+                        <ul class="project-details">
                         @foreach($value['details'] as $detail)
                             <li>{{ $detail }}</li>
                         @endforeach
                         </ul>
-                        <p>DESCRIPTION: {{$value['description']}}</p>
                         @if(__($value['ready']))
                         <div class="project-links">
                             <span>{{ $link }}</span>
@@ -85,6 +98,12 @@
                             </a>
                             @endif
                         </div>
+                        <div class="project-tabs">
+                            <span
+                                data-description="{{ $technicalDetailsHint }}"
+                                data-description-hide="{{ $technicalDetailsHideHint }}"
+                            >{{ $technicalDetails }}</span>
+                        </div>
                         <div class="project-links-description">
                             <span></span>
                         </div>
@@ -92,8 +111,6 @@
                             <a> {{ $coming }}</a>
                         @endif
                     </div>
-
-                    <img class="circle-img" src="img/{{$value['image']}}" alt="{{$value['alt']}}" data-project="{{$value['name']}}" data-description="{{ $galleryDescription }}">
                 </article>
             @endforEach
         </section>

@@ -2,7 +2,7 @@
 return [
     'nav' => [
         'projects' => 'Projects',
-        'bio' => 'Biography',
+        'bio' => 'About me',
         'studies' => 'Studies',
         'achievements' => 'Achievements',
         'contact' => 'Contact',
@@ -13,8 +13,13 @@ return [
     ],
 
     'bio' => [
-        'title' => 'Biography',
-        'bio' => "Mélisandre's foray into web development has been slow-building, through her explorations in interactive narrative/game design and her background in visual arts. Her art work consists of writing that oscillates between literature and media. Through her involvement with Lafin (the Liberal Arts Fictional Institute of Narrative: a fictional collective of artists and researchers), she has designed a series of poetic dream experiments, volunteered as an archivist, and written a few novels.",
+        'title' => 'Melisandre',
+        'bio' => "writing • art • games • software • research<br><br>
+        My work sits between these practices. I build narrative experiences, with new & old technologies, to engage with questions. I'm currently pursuing an MA, and am primarily interested in:<br>
+        <br>• narrative's ability to slip outside its frame
+        <br>• the ways we think
+        <br>• with technology
+        <br>• with each other",
     ],
 
     'projects' => [
@@ -27,10 +32,13 @@ return [
         'itchioDescription' => 'play the game',
         'videoDescription' => 'watch the video',
         'galleryDescription' => 'view the gallery',
+        'technicalDetails' => 'technical details',
+        'technicalDetailsHint' => 'see technical details',
+        'technicalDetailsHideHint' => 'hide technical details',
         'projectList' => [
             'project1' => [
-                'name' => 'TAG, YOU WRITE',
-                'year' => 2025,
+                'name' => 'PALINODES',
+                'year' => 2026,
                 'details' =>[
                     'HTML, CSS, PHP, MYSQL, JS, D3 library', 
                     'MVC structure',
@@ -38,9 +46,10 @@ return [
                     for both tree and outline views of collaborative story-building. Auto-save for drafts, short-polling for updates, notifications, permissions, game states, votes, texts read/unread, saving front-end states for seamless refreshes, generating pages with Twig/PHP, and RESTful APIs for dynamic data.',
                     ],
                 'description' => 'A collaborative writing game. In development.',
-                'link' => 'https://la-fin.org/tag-you-write',
+                'link' => 'https://palinodes.com',
                 'image' => 'tag-you-write.png',
                 'alt' => 'image of the home page, link to the gallery', 
+                'show' => true,
                 'ready' => true,
                 'github' => 'https://github.com/melisandres/tag-you-write',
                 'itchio' => '',
@@ -93,6 +102,7 @@ return [
                 'link' => 'https://la-fin.org',
                 'image' => 'lafin.jpg',
                 'alt' => 'image of an archival home page, link to the gallery', 
+                'show' => true,
                 'ready' => true,
                 'github' => 'https://github.com/melisandres/lafin',
                 'itchio' => '',
@@ -133,6 +143,7 @@ return [
                 'link' => 'https://la-fin.org/stampee',
                 'image' => 'stampee.png',
                 'alt' => 'image of the home page, link to the gallery', 
+                'show' => true,
                 'ready' => true,
                 'github' => 'https://github.com/melisandres/stampee',
                 'itchio' => '',
@@ -172,7 +183,8 @@ return [
                 'link' => 'https://app-vino.ca',
                 'image' => 'vino.png',
                 'alt' => 'image of the app logo, link to the gallery', 
-                'ready' => true,
+                'show' => false,
+                'ready' => false,
                 'github' => 'https://github.com/melisandres/app_vino',
                 'itchio' => '',
                 'video' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
@@ -206,6 +218,7 @@ return [
                 'link' => 'https://la-fin.org/hangman',
                 'image' => 'hangman.png',
                 'alt' => '', 
+                'show' => true,
                 'ready' => false,
                 'github' => '',
                 'gallery' => [
@@ -228,6 +241,7 @@ return [
                 'link' => 'https://melisandre.itch.io/lamp-lighter',
                 'image' => 'lamp-lighter.png',
                 'alt' => '', 
+                'show' => true,
                 'ready' => false,
                 'github' => 'https://github.com/melisandres/Street-Lamps',
                 'itchio' => '',
@@ -282,6 +296,7 @@ return [
                 'link' => '',
                 'image' => 'trust.png',
                 'alt' => '', 
+                'show' => true,
                 'ready' => true,
                 'github' => '',
                 'itchio' => 'https://melisandre.itch.io/help-is-needed',
@@ -311,6 +326,7 @@ return [
                 'link' => '',
                 'image' => 'stair-safety.png',
                 'alt' => '', 
+                'show' => true,
                 'ready' => true,
                 'github' => '',
                 'itchio' => 'https://melisandre.itch.io/stair-safety',
@@ -356,6 +372,7 @@ return [
                 'link' => '',
                 'image' => 'houses.png',
                 'alt' => '', 
+                'show' => true,
                 'ready' => true,
                 'github' => '',
                 'itchio' => 'https://melisandre.itch.io/houses',
@@ -381,8 +398,18 @@ return [
         'title' => 'Studies',
         'studiesList' => [
             'study1' => [
-                'program' => 'AEC conception et programmation de sites webs',
-                'program-truncated' => 'AEC web dev',
+                'program' => 'MA Educational Technology',
+                'program-truncated' => 'MA Ed Tech',
+                'school' => 'Concordia University',
+                'location' => 'Montreal Qc',
+                'year' => 'NOW',
+                'image' => 'cat pencil.jpg',
+                'alt' => '',
+                'link' => '',
+            ],
+            'study2' => [
+                'program' => 'Web Programming and Development ACS',
+                'program-truncated' => 'web dev ACS',
                 'school' => 'College Maisonneuve',
                 'location' => 'Montreal Qc',
                 'year' => 2024,
@@ -390,19 +417,19 @@ return [
                 'alt' => '',
                 'link' => '',
             ],
-            'study2' => [
-                'program' => 'AEC Independent Video Game Design',
-                'program-truncated' => 'AEC design jeux vidéos',
-                'school' => 'College Dawson',
+            'study3' => [
+                'program' => 'Independent Video Game Design ACS',
+                'program-truncated' => 'Video Game Design ACS',
+                'school' => 'Dawson College',
                 'location' => 'Montreal Qc',
                 'year' => 2017,
                 'image' => 'game.png',
                 'alt' => '',
                 'link' => '',
             ],
-            'study3' => [
+            'study4' => [
                 'program' => 'Tellus Interactive Arts and Entertainment',
-                'program-truncated' => 'Résidence narrativité interactive',
+                'program-truncated' => 'Interactive Narrative Residency',
                 'school' => 'The Canadian Film Center',
                 'location' => 'Toronto Ont',
                 'year' => 2007,
@@ -410,8 +437,8 @@ return [
                 'alt' => '',
                 'link' => 'https://cfccreates.com/content-hub/things-left-unsaid/',
             ],
-            'study4' => [
-                'program' => 'Bac en arts plastic',
+            'study5' => [
+                'program' => 'Bachelor of Fine Arts, Interdisciplinary',
                 'program-truncated' => 'Bachelor of Fine Arts',
                 'school' => 'NSCAD U',
                 'location' => 'Halifax NS',

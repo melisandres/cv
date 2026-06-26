@@ -11,5 +11,5 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    base: '/cv/build/',
+    base: '/build/',
 });

@@ -1,4 +1,5 @@
-.bigyear{
+/* Education page only — projects override in project-title.css */
+.edu .bigyear {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     color: #eeeeed;
@@ -8,16 +9,15 @@
     font-size: 20vw;
 }
 
-
-@media screen and (max-width:720px) {
-    .bigyear{
+@media screen and (max-width: 720px) {
+    .edu .bigyear {
         text-align: center !important;
-        font-size: 200px;
+        font-size: 150px;
     }
 }
 
-@media screen and (max-width:500px){
-    .bigyear{
+@media screen and (max-width: 500px) {
+    .edu .bigyear {
         font-size: 40vw;
     }
 }
