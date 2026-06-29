@@ -75,7 +75,7 @@ return [
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
-                'thoughts' => 'I invited my writing group to try a simple exercise I had designed. This exercise was the spark of an idea that was hard to explain with words, but easier to show visually: nodes branching out, where each node is a new version of the same text, as participants add to it, remove from it. I have always loved exquisite corpses, but I wanted the ability to move things around, to contribute in a non-linear way, and to see what emerged.  I wondered if co-writers might be able to come to a consensus through the act of editing rather than discussing. Each node holds the potential of being selected by all as the final text. I continue this work in the context of an MA in educational technology. ',
+                'thoughts' => '<p>I invited my writing group to try a simple exercise I had designed. This exercise was the spark of an idea that was hard to explain with words, but easier to show visually: nodes branching out, where each node is a new version of the same text, as participants add to it, remove from it. I have always loved exquisite corpses, but I wanted the ability to move things around, to contribute in a non-linear way, and to see what emerged.  I wondered if co-writers might be able to come to a consensus through the act of editing rather than discussing. Each node holds the potential of being selected by all as the final text. I continue this work in the context of an MA in educational technology. </p>',
                 'gallery' => [
                     [
                         'path' => 'tag-you-write.png',
@@ -129,7 +129,8 @@ return [
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
-                'thoughts' => 'The Liberal Arts Fictional Institute of Narrative is a collective of artists and researchers who share an interest in narrative, and in fiction--in part because most of them happen to be both. The characters in Lafin have been with me for years. Friends, in a way. Lafin is an attempt to create an intellectual and creative ecosystem, where the institute becomes its own context, where the questions become embodied by characters, programs, archives, and notes. At Lafin, collaboration is key, but potentially a strange illusion... the illusion of treating the work itself as a collaborator. Meanwhile, quietly, Lafin makes small attempts to open itself to outside contributions. It is an evolving landscape. It is a question that questions itself. ',
+                'thoughts' => '<p>The Liberal Arts Fictional Institute of Narrative is a collective of artists and researchers who share an interest in narrative, and in fiction--in part because most of them happen to be both.</p>
+                <p>The characters in Lafin have been with me for years. Friends, in a way. Lafin is an attempt to create an intellectual and creative ecosystem, where the institute becomes its own context, where the questions become embodied by characters, programs, archives, and notes. At Lafin, collaboration is key, but potentially a strange illusion... the illusion of treating the work itself as a collaborator. Meanwhile, quietly, Lafin makes small attempts to open itself to outside contributions. It is an evolving landscape. It is a question that questions itself. </p>',
                 'gallery' => [
                     [
                         'path' => 'lafin.jpg',
@@ -171,7 +172,7 @@ return [
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
-                'thoughts' => 'Placeholder: current research directions for STAMPEE — fictional commerce, collection economies, and playful auction mechanics — will appear here.',
+                'thoughts' => '<p>Placeholder: current research directions for STAMPEE — fictional commerce, collection economies, and playful auction mechanics — will appear here.</p>',
                 'gallery' => [
                     [
                         'path' => 'stampee.png',
@@ -270,7 +271,7 @@ return [
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
-                'thoughts' => 'Placeholder: current research directions for LAMP LIGHTER — urban ecology, procedural reflection, and environmental narrative — will appear here.',
+                'thoughts' => '<p>From the depths of a day job which was actually a night job, all I needed was some kind of light, to help me see where I was, and that I wasn\'t lost. Lamplighter emerged from this experience. I imagined I might be a scientist, doing the same things again and again, trying to understand... holding hope that I might come to some answers through repetition, some underlying logic in the ecosystem that manages to survive the city that hates it. Lamplighter climbs lampposts, every night, adjusting the colour, and intensity of the lights, and notes the effect of these lights on nearby bird populations. I was thinking: this is like a city ecology simulator… where dark streets increase crime, and too many crows bring bad luck… but while play-testing, the feeling that emerged didn’t quite touch what I was grappling with. I still think of it as an experiment, and as yet unfinished. </p>',
                 'gallery' => [
                     [
                         'path' => 'lamp-lighter1.jpeg',
@@ -326,7 +327,7 @@ return [
                 'itchio' => 'https://melisandre.itch.io/help-is-needed',
                 'video' => '',
                 'moreInfo' => '',
-                'thoughts' => 'Placeholder: current research directions for HELP IS NEEDED — trust, branching fiction, and dream logic — will appear here.',
+                'thoughts' => '<p>A barebones hypertext experience, the player wanders in the narrator’s neighbourhood, deciding who they might trust. I was working around my feelings of needing help, and not knowing where to get it. I don\'t think this is actually an easy question to answer. I think... just asking for help often doesn\'t cut it. And that\'s something hard about life. I wanted to explore the hopelessness, and the beauty in walking around it, not quite finding an exit, but seeing paths…  I feel that moments of personal fragility hold so much potential for meaning.</p>',
                 'gallery' => [
                     [
                         'path' => 'help-is-needed1.png',
@@ -357,7 +358,9 @@ return [
                 'itchio' => 'https://melisandre.itch.io/stair-safety',
                 'video' => '',
                 'moreInfo' => '',
-                'thoughts' => 'Placeholder: current research directions for STAIR SAFETY — bureaucracy as game space, accident narratives, and platformer poetics — will appear here.',
+                'thoughts' => '<p>You fall through a crack in the stairs, and end up in a strange bureaucratic labyrinth of... hallways, lines, paperwork, waiting rooms... The illusion of safety is held together with red tape.</p>
+
+                <p>I am particularly happy with this game. It’s simple, and it feels like it captures something about falling through the cracks, and being made to feel personally responsible for having ended up there—as if the holes were some kind of personal failing, rather than the effect of institutional decay.</p>',
                 'gallery' => [
                     [
                         'path' => 'stair-safety1.png',
@@ -404,7 +407,9 @@ return [
                 'itchio' => 'https://melisandre.itch.io/houses',
                 'video' => '',
                 'moreInfo' => '',
-                'thoughts' => 'Placeholder: current research directions for HOUSE GENERATOR — procedural generation, hand-drawn aesthetics, and drifting landscapes — will appear here.',
+                'thoughts' => '<p>I love houses. I love how they hide the most intimate.</p>
+                <p>Houses in video games hold a special possibility—of allowing us to enter.  But this one is simple. It’s just houses... built with hand drawings, and the camera pans forward, and the houses are built, and built, and built, randomly.</p> 
+                <p>The interest here was a little more technical... I was still learning to code, and the code here felt particularly poetic. I like the experiment. It\'s a little experiment.</p>',
                 'gallery' => [
                     [
                         'path' => 'houses.png',

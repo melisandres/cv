@@ -67,15 +67,17 @@
                         </div>
 
 
+                        @if(!empty($value['details']))
                         <ul class="project-details">
                         @foreach($value['details'] as $detail)
                             <li>{!! $detail !!}</li>
                         @endforeach
                         </ul>
-                        @if(!empty($value['thoughts']))
-                        <p class="project-thoughts">{{ $value['thoughts'] }}</p>
                         @endif
-                        @if(__($value['ready']))
+                        @if(!empty($value['thoughts']))
+                        <div class="project-thoughts">{!! $value['thoughts'] !!}</div>
+                        @endif
+                        @if($value['ready'])
                         <div class="project-links">
                             <span>{{ $link }}</span>
                             @if($value['link'])
@@ -104,12 +106,18 @@
                             </a>
                             @endif
                         </div>
+                        @else
+                            <a> {{ $coming }}</a>
+                        @endif
+                        @if(!empty($value['details']) || !empty($value['thoughts']))
                         <div class="project-tabs">
+                            @if(!empty($value['details']))
                             <span
                                 data-tab="technical"
                                 data-description="{{ $technicalDetailsHint }}"
                                 data-description-hide="{{ $technicalDetailsHideHint }}"
                             >{{ $technicalDetails }}</span>
+                            @endif
                             @if(!empty($value['thoughts']))
                             <span
                                 data-tab="thoughts"
@@ -118,11 +126,11 @@
                             >{{ $aFewThoughts }}</span>
                             @endif
                         </div>
+                        @endif
+                        @if($value['ready'] || !empty($value['details']) || !empty($value['thoughts']))
                         <div class="project-links-description">
                             <span></span>
                         </div>
-                        @else
-                            <a> {{ $coming }}</a>
                         @endif
                     </div>
                 </article>

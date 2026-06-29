@@ -82,7 +82,7 @@ return [
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
-                'thoughts' => 'J’ai invité mon groupe d’écriture à essayer un exercice simple que j’avais conçu. Cet exercice était l’étincelle d’une idée difficile à expliquer avec des mots, mais plus facile à montrer visuellement : des nœuds qui se déploient, où chaque nœud est une nouvelle version du même texte, au fur et à mesure que les participants ajoutent des éléments, en retirent d’autres. J’ai toujours aimé les cadavres exquis, mais je voulais pouvoir déplacer les choses, contribuer de manière non linéaire, et voir ce qui émergeait. Je me demandais si des coécrivains pouvaient parvenir à une forme de consensus par le geste de l’édition plutôt que par la discussion. Chaque nœud porte la possibilité d’être choisi par tous comme texte final. Je poursuis ce travail dans le cadre d’une maîtrise en technologies éducatives.',
+                'thoughts' => '<p>J’ai invité mon groupe d’écriture à essayer un exercice simple que j’avais conçu. Cet exercice était l’étincelle d’une idée difficile à expliquer avec des mots, mais plus facile à montrer visuellement : des nœuds qui se déploient, où chaque nœud est une nouvelle version du même texte, au fur et à mesure que les participants ajoutent des éléments, en retirent d’autres. J’ai toujours aimé les cadavres exquis, mais je voulais pouvoir déplacer les choses, contribuer de manière non linéaire, et voir ce qui émergeait. Je me demandais si des coécrivains pouvaient parvenir à une forme de consensus par le geste de l’édition plutôt que par la discussion. Chaque nœud porte la possibilité d’être choisi par tous comme texte final. Je poursuis ce travail dans le cadre d’une maîtrise en technologies éducatives.</p>',
                 'gallery' => [
                     [
                         'path' => 'tag-you-write.png',
@@ -136,7 +136,9 @@ return [
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
-                'thoughts' => 'L’institut artistique fictif d’investigations narrautonomiques est un collectif d’artistes et de chercheurs qui partagent un intérêt pour la narration et la fiction — en partie parce que la plupart d’entre eux sont les deux à la fois. Les personnages de Lafin m’accompagnent depuis des années. Des amis, en quelque sorte. Lafin est une tentative de créer un écosystème intellectuel et créatif, où l’institut devient son propre contexte, où les questions prennent corps à travers des personnages, des programmes, des archives et des notes. À Lafin, la collaboration est centrale, mais peut-être aussi une étrange illusion… l’illusion de traiter le travail lui-même comme un collaborateur. Parallèlement, Lafin tente discrètement de s’ouvrir à des contributions extérieures. C’est un paysage en évolution. Une question qui se questionne elle-même.',
+                'thoughts' => '<p><strong>L’institut artistique fictif d’investigations narrautonomiques</strong> est un collectif d’artistes et de chercheurs qui partagent un intérêt pour le narratif et la fiction — en partie parce que la plupart d’entre eux sont les deux à la fois.</p> 
+                <p>Les personnages de Lafin m’accompagnent depuis des années. Des amis, en quelque sorte. Lafin est une tentative de créer un écosystème intellectuel et créatif, où l’institut devient son propre contexte, où les questions prennent corps à travers des personnages, des programmes, des archives et des notes. À Lafin, la collaboration est centrale, mais peut-être aussi une étrange illusion… l’illusion de traiter le travail lui-même comme un collaborateur.</p>
+                <p>Parallèlement, Lafin tente discrètement de s’ouvrir à des contributions extérieures. C’est un paysage en évolution. Une question qui se questionne elle-même.</p>',
                 'gallery' => [
                     [
                         'path' => 'lafin.jpg',
@@ -268,7 +270,8 @@ return [
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
-                'thoughts' => 'Texte provisoire : les orientations de recherche actuelles pour LAMP LIGHTER — écologie urbaine, réflexion procédurale et récit environnemental — apparaîtront ici.',
+                'thoughts' => '<p>Au fond d’un emploi de nuit, tout ce qu’il me fallait, c’était une lumière — quelque chose qui m’aiderait à voir où j’étais, et à comprendre que je n\'étais pas perdu. Lamplighter est né de cette période. Je m\'imaginais scientifique, faisant les mêmes gestes encore et encore, essayant de comprendre... gardant l\'espoir que la répétition finirait par faire émerger des réponses, une logique cachée à l\'écosystème qui parvient à survivre à la ville qui le déteste. Chaque nuit, Lamplighter grimpe aux lampadaires, ajuste la couleur et l\'intensité des lumières, puis observe leur effet sur les populations d\'oiseaux avoisinantes. Je me disais : c\'est un peu comme un simulateur d\'écologie urbaine... où les rues sombres augmentent la criminalité, et où trop de corneilles portent malheur... mais en le testant, le sentiment qui en ressortait ne rejoignait pas tout à fait ce que je cherchais à explorer. Je continue de le voir comme une expérience, encore inachevée.</p>',
+
                 'gallery' => [
                     [
                         'path' => 'lamp-lighter1.jpeg',
@@ -324,7 +327,8 @@ return [
                 'itchio' => 'https://melisandre.itch.io/help-is-needed',
                 'video' => '',
                 'moreInfo' => '',
-                'thoughts' => 'Texte provisoire : les orientations de recherche actuelles pour HELP IS NEEDED — confiance, fiction ramifiée et logique onirique — apparaîtront ici.',
+                'thoughts' => '<p>Une expérience hypertexte minimaliste, où le joueur déambule dans le quartier de la narratrice, en cherchant à décider à qui faire confiance. Je tournais autour de mes sentiments liés au besoin d\'aide, et à l\'impression de ne pas savoir où la trouver. Je ne crois pas que ce soit une question facile. Je pense que... demander de l\'aide ne suffit souvent pas. Et c\'est l\'une des choses difficiles de la vie. J\'avais envie d\'explorer le désespoir, mais aussi la beauté qu\'il y a à tourner autour, sans tout à fait trouver une issue, tout en découvrant des chemins... J\'ai l\'impression que les moments de fragilité portent un immense potentiel de sens.</p>
+',
                 'gallery' => [
                     [
                         'path' => 'trust.png',
@@ -355,7 +359,9 @@ return [
                 'itchio' => 'https://melisandre.itch.io/stair-safety',
                 'video' => '',
                 'moreInfo' => '',
-                'thoughts' => 'Texte provisoire : les orientations de recherche actuelles pour STAIR SAFETY — bureaucratie comme espace de jeu, récits d\'accident et poétique du plateformer — apparaîtront ici.',
+                'thoughts' => '<p>Vous passez au travers d\'un trou entre deux marches d\'escalier et vous vous retrouvez dans un étrange labyrinthe bureaucratique : couloirs, files d\'attente, formulaires, salles d\'attente... L\'illusion de la sécurité tient peut-être.</p>
+
+                <p>Je garde une tendresse particulière pour ce jeu. Il est simple, mais j\'ai l\'impression qu\'il parvient à saisir quelque chose de cette sensation de passer entre les mailles du filet, tout en étant amené à se sentir personnellement responsable d\'être tombé là — comme si cela avait quelque chose à voir avec soi, plutôt qu\'avec l\'effritement des institutions.</p>',
                 'gallery' => [
                     [
                         'path' => 'stair-safety1.png',
@@ -402,7 +408,11 @@ return [
                 'itchio' => 'https://melisandre.itch.io/houses',
                 'video' => '',
                 'moreInfo' => '',
-                'thoughts' => 'Texte provisoire : les orientations de recherche actuelles pour HOUSE GENERATOR — génération procédurale, esthétique dessinée à la main et paysages dérivants — apparaîtront ici.',
+                'thoughts' => '<p>J’aime les maisons. J’aime la façon dont elles cachent l’intime. Dans les jeux vidéo, les maisons ont une possibilité particulière — celle de nous laisser entrer.</p>
+
+                <p>Mais celui-ci est simple. Ce sont juste des maisons... dessinées à la main, et la caméra avance, et les maisons se construisent, encore et encore, de manière aléatoire.</p>
+
+                <p>L’intérêt était ici un peu plus technique... J’étais encore en train d’apprendre à coder, et le code, à cet endroit-là, me semblait particulièrement poétique. J’aime l’expérience. C’est une petite expérience.</p>',
                 'gallery' => [
                     [
                         'path' => 'houses.png',
