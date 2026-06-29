@@ -69,7 +69,7 @@
 
                         <ul class="project-details">
                         @foreach($value['details'] as $detail)
-                            <li>{{ $detail }}</li>
+                            <li>{!! $detail !!}</li>
                         @endforeach
                         </ul>
                         @if(!empty($value['thoughts']))

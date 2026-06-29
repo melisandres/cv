@@ -7,6 +7,16 @@
     margin-top: 6em;
 }
 
+.project:nth-of-type(even) {
+    background-color: rgb(255, 255, 247);
+    padding-block: 2em;
+    width: 100vw;
+    max-width: none;
+    margin-inline: calc(50% - 50vw);
+    padding-inline: calc(50vw - 50% + 0.6em);
+    box-sizing: border-box;
+}
+
 .project-links {
     margin-bottom: 1em;
 }
@@ -159,6 +169,13 @@
         max-width: 100%;
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .project:nth-of-type(even) {
+        width: 100vw;
+        max-width: none;
+        margin-inline: calc(50% - 50vw);
+        padding-inline: calc(50vw - 50%);
     }
 
     .project > div {

@@ -15,7 +15,7 @@ return [
     'bio' => [
         'title' => 'Melisandre',
         'bio' => "
-        <h3>writing • art • games • software • research</h3>
+        <h3>writing • art • games • code • research</h3>
         <p>My work sits between these practices. I build narrative experiences, often meant to be experienced with others. I'm currently pursuing an MA, and am primarily interested in:</p>
         <ul>
             <li>narrative's ability to slip outside its frame</li>
@@ -56,11 +56,15 @@ return [
                 'name' => 'PALINODES',
                 'year' => 2026,
                 'details' =>[
-                    'HTML, CSS, PHP, MYSQL, JS, D3 library', 
-                    'MVC structure',
-                    'interactive hierarchical data visualizations using D3.js and custom JS,
-                    for both tree and outline views of collaborative story-building. Auto-save for drafts, short-polling for updates, notifications, permissions, game states, votes, texts read/unread, saving front-end states for seamless refreshes, generating pages with Twig/PHP, and RESTful APIs for dynamic data.',
-                    ],
+                    '<strong>visualization:</strong> D3.js + custom JavaScript (hierarchical narrative structures)',
+                    '<strong>interface:</strong> tree + outline views for collaborative story-building',
+                    '<strong>comparison:</strong> integration of a diffing library (view-only, outside editing mode)',
+                    '<strong>bilingual interface:</strong> EN / FR',
+                    '<strong>search & navigation:</strong> filters, search, and sorting across narrative hierarchies',
+                    '<strong>architecture:</strong> MVC (Twig/PHP), REST API, Redis real-time layer, polling fallback',
+                    '<strong>behaviours:</strong> contextual tutorial system, auto-save drafts, voting, permissions, notifications, read/unread tracking, persistent state across refreshes',
+                    '<strong>upcoming:</strong> node merging, real-time comparison layer',
+                ],
                 'description' => 'A collaborative writing game. In development.',
                 'link' => 'https://palinodes.com',
                 'image' => 'tag-you-write.png',
@@ -71,7 +75,7 @@ return [
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
-                'thoughts' => 'Placeholder: current research directions for PALINODES — collaborative story-building, reader agency, and live narrative state — will appear here.',
+                'thoughts' => 'I invited my writing group to try a simple exercise I had designed. This exercise was the spark of an idea that was hard to explain with words, but easier to show visually: nodes branching out, where each node is a new version of the same text, as participants add to it, remove from it. I have always loved exquisite corpses, but I wanted the ability to move things around, to contribute in a non-linear way, and to see what emerged.  I wondered if co-writers might be able to come to a consensus through the act of editing rather than discussing. Each node holds the potential of being selected by all as the final text. I continue this work in the context of an MA in educational technology. ',
                 'gallery' => [
                     [
                         'path' => 'tag-you-write.png',
@@ -125,7 +129,7 @@ return [
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
-                'thoughts' => 'Placeholder: current research directions for LAFIN — archival fiction, institutional voice, and responsive web narrative — will appear here.',
+                'thoughts' => 'The Liberal Arts Fictional Institute of Narrative is a collective of artists and researchers who share an interest in narrative, and in fiction--in part because most of them happen to be both. The characters in Lafin have been with me for years. Friends, in a way. Lafin is an attempt to create an intellectual and creative ecosystem, where the institute becomes its own context, where the questions become embodied by characters, programs, archives, and notes. At Lafin, collaboration is key, but potentially a strange illusion... the illusion of treating the work itself as a collaborator. Meanwhile, quietly, Lafin makes small attempts to open itself to outside contributions. It is an evolving landscape. It is a question that questions itself. ',
                 'gallery' => [
                     [
                         'path' => 'lafin.jpg',

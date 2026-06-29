@@ -14,7 +14,7 @@ return [
 
     'bio' => [
         'title' => 'À propos...',
-        'bio' => "<h3>écriture • art • jeux • programmation • recherche</h3>
+        'bio' => "<h3>écriture • art • jeux • code • recherche</h3>
         <p>Ma pratique se situe au croisement de ces disciplines. Je crée des expériences narratives, souvent pensées pour être vécues avec d'autres. Je poursuis actuellement une maîtrise en technologie éducative et je m'intéresse principalement à:</p>
         <ul>
         <li>la capacité du narratif à s'échapper de son cadre</li>
@@ -56,9 +56,21 @@ return [
                 'name' => 'PALINODES',
                 'year' => 2026,
                 'details' => [
-                    'HTML, CSS, PHP, MYSQL, JS, bibliothèque D3',
-                    'structure MVC',
-                    'Visualisations interactives de données hiérarchiques avec D3.js et JS personnalisé, vues en arbre et liste pour la collaboration narrative. Auto-enregistrement des brouillons, sondages courts pour mises à jour, notifications, permissions, états de jeu, votes, textes lus/non lus, sauvegarde des états pour rafraîchissements fluides, génération de pages avec Twig/PHP, APIs REST pour données dynamiques.'
+                    '<strong>visualisation :</strong> D3.js + JavaScript personnalisé (structures narratives hiérarchiques)',
+
+                    '<strong>interface:</strong> vues en arbre et en plan pour la création collaborative de récits',
+                    
+                    '<strong>comparaison:</strong> intégration d’une bibliothèque de diff (lecture seule, hors mode d’édition)',
+                    
+                    '<strong>interface bilingue:</strong> EN / FR',
+                    
+                    '<strong>navigation et recherche:</strong> filtres, recherche et tri à travers des structures narratives hiérarchiques',
+                    
+                    '<strong>architecture:</strong> MVC (Twig/PHP), API REST, couche temps réel avec Redis, solution de repli par polling',
+                    
+                    '<strong>comportements:</strong> système de tutoriel contextuel, sauvegarde automatique des brouillons, votes, permissions, notifications, suivi lu / non lu, état persistant entre les rafraîchissements',
+                    
+                    '<strong>à venir:</strong> fusion de nœuds, couche de comparaison en temps réel',
                 ],
                 'description' => 'Un projet qui me tient à cœur, un jeu d\'écriture collaborative. En développement.',
                 'link' => 'https://palinodes.com',
@@ -70,7 +82,7 @@ return [
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
-                'thoughts' => 'Texte provisoire : les orientations de recherche actuelles pour PALINODES — écriture collaborative, agence du lecteur et état narratif en direct — apparaîtront ici.',
+                'thoughts' => 'J’ai invité mon groupe d’écriture à essayer un exercice simple que j’avais conçu. Cet exercice était l’étincelle d’une idée difficile à expliquer avec des mots, mais plus facile à montrer visuellement : des nœuds qui se déploient, où chaque nœud est une nouvelle version du même texte, au fur et à mesure que les participants ajoutent des éléments, en retirent d’autres. J’ai toujours aimé les cadavres exquis, mais je voulais pouvoir déplacer les choses, contribuer de manière non linéaire, et voir ce qui émergeait. Je me demandais si des coécrivains pouvaient parvenir à une forme de consensus par le geste de l’édition plutôt que par la discussion. Chaque nœud porte la possibilité d’être choisi par tous comme texte final. Je poursuis ce travail dans le cadre d’une maîtrise en technologies éducatives.',
                 'gallery' => [
                     [
                         'path' => 'tag-you-write.png',
@@ -124,7 +136,7 @@ return [
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
-                'thoughts' => 'Texte provisoire : les orientations de recherche actuelles pour LAFIN — fiction archivée, voix institutionnelle et récit web réactif — apparaîtront ici.',
+                'thoughts' => 'L’institut artistique fictif d’investigations narrautonomiques est un collectif d’artistes et de chercheurs qui partagent un intérêt pour la narration et la fiction — en partie parce que la plupart d’entre eux sont les deux à la fois. Les personnages de Lafin m’accompagnent depuis des années. Des amis, en quelque sorte. Lafin est une tentative de créer un écosystème intellectuel et créatif, où l’institut devient son propre contexte, où les questions prennent corps à travers des personnages, des programmes, des archives et des notes. À Lafin, la collaboration est centrale, mais peut-être aussi une étrange illusion… l’illusion de traiter le travail lui-même comme un collaborateur. Parallèlement, Lafin tente discrètement de s’ouvrir à des contributions extérieures. C’est un paysage en évolution. Une question qui se questionne elle-même.',
                 'gallery' => [
                     [
                         'path' => 'lafin.jpg',
