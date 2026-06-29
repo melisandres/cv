@@ -14,12 +14,25 @@ return [
 
     'bio' => [
         'title' => 'Melisandre',
-        'bio' => "writing • art • games • software • research<br><br>
-        My work sits between these practices. I build narrative experiences, with new & old technologies, to engage with questions. I'm currently pursuing an MA, and am primarily interested in:<br>
-        <br>• narrative's ability to slip outside its frame
-        <br>• the ways we think
-        <br>• with technology
-        <br>• with each other",
+        'bio' => "
+        <h3>writing • art • games • software • research</h3>
+        <p>My work sits between these practices. I build narrative experiences, often meant to be experienced with others. I'm currently pursuing an MA, and am primarily interested in:</p>
+        <ul>
+            <li>narrative's ability to slip outside its frame</li>
+            <li>the ways we think together</li>
+        </ul>
+        ",
+        'artistStatement' => "<p>Fresh out of my bachelor's degree in visual arts, I set out working with a fictional collective (Lafin). I worked on our website, learning as I went... I wrote, printed, and bound books by the fictional members of this collective, and I wondered where they lived, inside me. Should I take a moment every morning, with my breakfast, to contemplate the image of them eating their breakfasts, having their own thoughts, living their independent lives, on a parallel timeline? Should I write letters to them, along with their responses, to better understand their minds, and our relationships? </p>
+
+        <p>I considered the ecosystem I was building as a playground--for myself, and for others--for anyone (a sometimes frightening prospect). I wondered, can we play pretend, the way children do? How might real people enter this collaboration?  I offered people I met the opportunity to take on a name of their choosing, and join my fictional community. Some did. </p>
+
+        <p>So many potential collaborators--like a city of them, hidden within opaque walls. My fictional collaborators were easier to work with, always available. Almost always. But when I reached them, they slipped outside of the parallel time-line, and into another one, one that I think belongs to fiction--a time-line that allows a full life to spark into being, mature, and extinguish within a moment. They challenged me to think of them in the present tense, rather then through the frame of story.</p>
+
+        <p>I'm deeply interested in process. Process is revision, sketches, mapping, erasing, coding, decoding, walking. Projects can be treated as collaborators, as characters, not quite real, but also not entirely fiction. They ask to be imagined as living, perhaps. And maybe this feels impossible. Maybe, instead, I offer to imagine the insides of city walls, smudged with the fingerprints of real life collaborators--and I feel apprehensive, there's the work, the fictional collaborators, the real collaborators, and me, offering a space where each of these is malleable, where the rules of play are being decided, but I’m not sure by whom.</p>
+        ",
+        'artistStatementTab' => 'artist statement',
+        'artistStatementHint' => 'read artist statement',
+        'artistStatementHideHint' => 'hide artist statement',
     ],
 
     'projects' => [
@@ -35,6 +48,9 @@ return [
         'technicalDetails' => 'technical details',
         'technicalDetailsHint' => 'see technical details',
         'technicalDetailsHideHint' => 'hide technical details',
+        'aFewThoughts' => 'a few thoughts',
+        'aFewThoughtsHint' => 'read a few thoughts',
+        'aFewThoughtsHideHint' => 'hide a few thoughts',
         'projectList' => [
             'project1' => [
                 'name' => 'PALINODES',
@@ -55,6 +71,7 @@ return [
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
+                'thoughts' => 'Placeholder: current research directions for PALINODES — collaborative story-building, reader agency, and live narrative state — will appear here.',
                 'gallery' => [
                     [
                         'path' => 'tag-you-write.png',
@@ -108,6 +125,7 @@ return [
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
+                'thoughts' => 'Placeholder: current research directions for LAFIN — archival fiction, institutional voice, and responsive web narrative — will appear here.',
                 'gallery' => [
                     [
                         'path' => 'lafin.jpg',
@@ -143,12 +161,13 @@ return [
                 'link' => 'https://la-fin.org/stampee',
                 'image' => 'stampee.png',
                 'alt' => 'image of the home page, link to the gallery', 
-                'show' => true,
+                'show' => false,
                 'ready' => true,
                 'github' => 'https://github.com/melisandres/stampee',
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
+                'thoughts' => 'Placeholder: current research directions for STAMPEE — fictional commerce, collection economies, and playful auction mechanics — will appear here.',
                 'gallery' => [
                     [
                         'path' => 'stampee.png',
@@ -247,6 +266,7 @@ return [
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
+                'thoughts' => 'Placeholder: current research directions for LAMP LIGHTER — urban ecology, procedural reflection, and environmental narrative — will appear here.',
                 'gallery' => [
                     [
                         'path' => 'lamp-lighter1.jpeg',
@@ -302,6 +322,7 @@ return [
                 'itchio' => 'https://melisandre.itch.io/help-is-needed',
                 'video' => '',
                 'moreInfo' => '',
+                'thoughts' => 'Placeholder: current research directions for HELP IS NEEDED — trust, branching fiction, and dream logic — will appear here.',
                 'gallery' => [
                     [
                         'path' => 'help-is-needed1.png',
@@ -332,6 +353,7 @@ return [
                 'itchio' => 'https://melisandre.itch.io/stair-safety',
                 'video' => '',
                 'moreInfo' => '',
+                'thoughts' => 'Placeholder: current research directions for STAIR SAFETY — bureaucracy as game space, accident narratives, and platformer poetics — will appear here.',
                 'gallery' => [
                     [
                         'path' => 'stair-safety1.png',
@@ -378,6 +400,7 @@ return [
                 'itchio' => 'https://melisandre.itch.io/houses',
                 'video' => '',
                 'moreInfo' => '',
+                'thoughts' => 'Placeholder: current research directions for HOUSE GENERATOR — procedural generation, hand-drawn aesthetics, and drifting landscapes — will appear here.',
                 'gallery' => [
                     [
                         'path' => 'houses.png',

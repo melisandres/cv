@@ -73,6 +73,8 @@
 .project-tabs {
     display: flex;
     align-items: baseline;
+    gap: 2em;
+    flex-wrap: wrap;
 }
 
 .project-tabs [data-description] {
@@ -80,8 +82,8 @@
     display: inline-block;
 }
 
-.project.details-open .project-tabs [data-description],
-.project-tabs [data-description].active {
+.project.details-open .project-tabs [data-tab="technical"],
+.project.thoughts-open .project-tabs [data-tab="thoughts"] {
     border-bottom: 1px solid currentColor;
     padding-bottom: 0.1em;
 }
@@ -91,6 +93,15 @@
 }
 
 .project.details-open .project-details {
+    display: block;
+}
+
+.project-thoughts {
+    display: none;
+    margin: 0;
+}
+
+.project.thoughts-open .project-thoughts {
     display: block;
 }
 
@@ -117,6 +128,10 @@
     }
 
     .project > div > .project-details {
+        order: 8;
+    }
+
+    .project > div > .project-thoughts {
         order: 8;
     }
 
@@ -210,6 +225,12 @@
     }
 
     .project > div > .project-details {
+        grid-area: details;
+        width: 0;
+        min-width: 100%;
+    }
+
+    .project > div > .project-thoughts {
         grid-area: details;
         width: 0;
         min-width: 100%;

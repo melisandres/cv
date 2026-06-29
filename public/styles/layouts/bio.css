@@ -5,16 +5,15 @@
     margin-right: 1em;
     margin-top: 1em;
 }
-.bio div{
+
+.bio__banner {
     background-image: url('../../img/tiling-animals.jpeg');
-    background-repeat: repeat; /* Tiling the background image */
+    background-repeat: repeat;
     background-position: 500px 700px;
     background-size: contain;
     width: 100%;
     height: 325px;
 }
-
-
 
 @media screen and (max-width:720px) {
     #menu-toggle:checked ~ .bio{

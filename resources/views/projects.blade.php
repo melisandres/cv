@@ -16,6 +16,9 @@
     $technicalDetails = __('message.projects.technicalDetails');
     $technicalDetailsHint = __('message.projects.technicalDetailsHint');
     $technicalDetailsHideHint = __('message.projects.technicalDetailsHideHint');
+    $aFewThoughts = __('message.projects.aFewThoughts');
+    $aFewThoughtsHint = __('message.projects.aFewThoughtsHint');
+    $aFewThoughtsHideHint = __('message.projects.aFewThoughtsHideHint');
     $galleries = [];
     foreach ($projectList as $project) {
         if (isset($project['gallery']) && isset($project['name'])) {
@@ -69,6 +72,9 @@
                             <li>{{ $detail }}</li>
                         @endforeach
                         </ul>
+                        @if(!empty($value['thoughts']))
+                        <p class="project-thoughts">{{ $value['thoughts'] }}</p>
+                        @endif
                         @if(__($value['ready']))
                         <div class="project-links">
                             <span>{{ $link }}</span>
@@ -100,9 +106,17 @@
                         </div>
                         <div class="project-tabs">
                             <span
+                                data-tab="technical"
                                 data-description="{{ $technicalDetailsHint }}"
                                 data-description-hide="{{ $technicalDetailsHideHint }}"
                             >{{ $technicalDetails }}</span>
+                            @if(!empty($value['thoughts']))
+                            <span
+                                data-tab="thoughts"
+                                data-description="{{ $aFewThoughtsHint }}"
+                                data-description-hide="{{ $aFewThoughtsHideHint }}"
+                            >{{ $aFewThoughts }}</span>
+                            @endif
                         </div>
                         <div class="project-links-description">
                             <span></span>

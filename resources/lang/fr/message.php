@@ -14,12 +14,25 @@ return [
 
     'bio' => [
         'title' => 'À propos...',
-        'bio' => "écriture • art • jeux • programmation • recherche<br>
-        <br>Mes projets se situent entre ces pratiques. Je poursuis actuellement une maîtrise et je m'intéresse à:<br>
-        <br>• la capacité du narratif à s'échapper de son cadre
-        <br>• aux façons dont nous pensons
-        <br>• avec la technologie
-        <br>• ensemble",
+        'bio' => "<h3>écriture • art • jeux • programmation • recherche</h3>
+        <p>Ma pratique se situe au croisement de ces disciplines. Je crée des expériences narratives, souvent pensées pour être vécues avec d'autres. Je poursuis actuellement une maîtrise en technologie éducative et je m'intéresse principalement à:</p>
+        <ul>
+        <li>la capacité du narratif à s'échapper de son cadre</li>
+        <li>aux façons dont nous pensons ensemble</li>
+        </ul>",
+        'artistStatementTab' => 'démarche artistique',
+        'artistStatementHint' => 'lire ma démarche artistique',
+        'artistStatementHideHint' => 'masquer ma démarche artistique',
+        'artistStatement' => "
+        <p>À peine sorti de mon baccalauréat en arts visuels, je me suis mis à travailler avec un collectif fictif (Lafin). J'ai conçu notre site web en apprenant au fur et à mesure... J'ai écrit, imprimé et relié des livres attribués aux membres fictifs de ce collectif, et je me demandais où ils habitaient, en moi. Devrais-je prendre un moment, chaque matin, au petit déjeuner, pour imaginer ces personnages prenant eux aussi leur petit déjeuner, absorbés dans leurs propres pensées, menant leur vie indépendante sur une ligne du temps parallèle? Devrais-je leur écrire des lettres, puis imaginer leurs réponses, pour mieux comprendre leur façon de penser, et la nature de nos relations?</p>
+
+        <p>Je considérais l'écosystème que je construisais comme un terrain de jeu — pour moi-même, pour les autres, pour n'importe qui (une perspective parfois un peu inquiétante). Je me demandais : peut-on jouer à faire semblant comme le font les enfants? Comment de vraies personnes pourraient-elles entrer dans cette collaboration? J'ai proposé aux gens que je rencontrais de choisir un nom et de rejoindre ma communauté fictive. Certains l'ont fait.</p>
+
+        <p>Tellement de collaborateurs potentiels — comme une ville entière cachée derrière des murs opaques. Mes collaborateurs fictifs étaient plus faciles à rejoindre, toujours disponibles. Ou presque. Mais lorsque je les retrouvais, ils glissaient hors de cette ligne du temps parallèle, vers une autre, qui me semble appartenir à la fiction — une ligne du temps où une vie entière peut naître, mûrir et s'éteindre en un seul instant. Ils m'ont amené à penser à eux au présent, plutôt qu'à travers le cadre du récit.</p>    
+
+        <p>Le processus me fascine profondément. Le processus, c'est la révision, les esquisses, la cartographie, l'effacement, le code, le décodage, la marche. Les projets peuvent être envisagés comme des collaborateurs, comme des personnages: pas tout à fait réels, mais pas entièrement fictifs non plus. Ils demandent peut-être qu'on les imagine vivants. Et peut-être que ça semble impossible. Peut-être que je propose plutôt d'imaginer l'intérieur des murs d'une ville, marqués des empreintes de collaborateurs bien réels. Et moi, j'avance avec une certaine appréhension: il y a l'œuvre, les collaborateurs fictifs, les collaborateurs réels, et moi, cherchant un moyen d'offrir un espace où chacun demeure malléable, où les règles du jeu se décident encore, sans qu'on sache vraiment par qui.</p>
+        
+        "
     ],
 
     'projects' => [
@@ -35,6 +48,9 @@ return [
         'technicalDetails' => 'détails techniques',
         'technicalDetailsHint' => 'voir les détails techniques',
         'technicalDetailsHideHint' => 'masquer les détails techniques',
+        'aFewThoughts' => 'quelques réflexions',
+        'aFewThoughtsHint' => 'lire quelques réflexions',
+        'aFewThoughtsHideHint' => 'masquer quelques réflexions',
         'projectList' => [
             'project1' => [
                 'name' => 'PALINODES',
@@ -54,6 +70,7 @@ return [
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
+                'thoughts' => 'Texte provisoire : les orientations de recherche actuelles pour PALINODES — écriture collaborative, agence du lecteur et état narratif en direct — apparaîtront ici.',
                 'gallery' => [
                     [
                         'path' => 'tag-you-write.png',
@@ -107,6 +124,7 @@ return [
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
+                'thoughts' => 'Texte provisoire : les orientations de recherche actuelles pour LAFIN — fiction archivée, voix institutionnelle et récit web réactif — apparaîtront ici.',
                 'gallery' => [
                     [
                         'path' => 'lafin.jpg',
@@ -142,12 +160,13 @@ return [
                 'link' => 'https://la-fin.org/stampee',
                 'image' => 'stampee.png',
                 'alt' => '',
-                'show' => true,
+                'show' => false,
                 'ready' => true, 
                 'github' => 'https://github.com/melisandres/stampee',
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
+                'thoughts' => 'Texte provisoire : les orientations de recherche actuelles pour STAMPEE — commerce fictif, économies de collection et mécaniques d\'enchères ludiques — apparaîtront ici.',
                 'gallery' => [
                     [
                         'path' => 'stampee.png',
@@ -237,6 +256,7 @@ return [
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
+                'thoughts' => 'Texte provisoire : les orientations de recherche actuelles pour LAMP LIGHTER — écologie urbaine, réflexion procédurale et récit environnemental — apparaîtront ici.',
                 'gallery' => [
                     [
                         'path' => 'lamp-lighter1.jpeg',
@@ -292,6 +312,7 @@ return [
                 'itchio' => 'https://melisandre.itch.io/help-is-needed',
                 'video' => '',
                 'moreInfo' => '',
+                'thoughts' => 'Texte provisoire : les orientations de recherche actuelles pour HELP IS NEEDED — confiance, fiction ramifiée et logique onirique — apparaîtront ici.',
                 'gallery' => [
                     [
                         'path' => 'trust.png',
@@ -322,6 +343,7 @@ return [
                 'itchio' => 'https://melisandre.itch.io/stair-safety',
                 'video' => '',
                 'moreInfo' => '',
+                'thoughts' => 'Texte provisoire : les orientations de recherche actuelles pour STAIR SAFETY — bureaucratie comme espace de jeu, récits d\'accident et poétique du plateformer — apparaîtront ici.',
                 'gallery' => [
                     [
                         'path' => 'stair-safety1.png',
@@ -368,6 +390,7 @@ return [
                 'itchio' => 'https://melisandre.itch.io/houses',
                 'video' => '',
                 'moreInfo' => '',
+                'thoughts' => 'Texte provisoire : les orientations de recherche actuelles pour HOUSE GENERATOR — génération procédurale, esthétique dessinée à la main et paysages dérivants — apparaîtront ici.',
                 'gallery' => [
                     [
                         'path' => 'houses.png',
