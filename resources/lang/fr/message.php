@@ -51,10 +51,15 @@ return [
         'aFewThoughts' => 'quelques réflexions',
         'aFewThoughtsHint' => 'lire quelques réflexions',
         'aFewThoughtsHideHint' => 'masquer quelques réflexions',
+        // project status: 'completed' | 'ongoing' | 'inDevelopment'
+        'ongoing' => 'en cours',
+        'inDevelopment' => 'en développement',
         'projectList' => [
             'project1' => [
                 'name' => 'PALINODES',
-                'year' => 2024,
+                'status' => 'inDevelopment',
+                'startYear' => 2024,
+                'lastMajorUpdate' => 2024,
                 'details' => [
                     '<strong>visualisation :</strong> D3.js + JavaScript personnalisé (structures narratives hiérarchiques)',
 
@@ -82,7 +87,7 @@ return [
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
-                'thoughts' => '<p>J’ai invité mon groupe d’écriture à essayer un exercice simple que j’avais conçu. Cet exercice était l’étincelle d’une idée difficile à expliquer avec des mots, mais plus facile à montrer visuellement : des nœuds qui se déploient, où chaque nœud est une nouvelle version du même texte, au fur et à mesure que les participants ajoutent des éléments, en retirent d’autres. J’ai toujours aimé les cadavres exquis, mais je voulais pouvoir déplacer les choses, contribuer de manière non linéaire, et voir ce qui émergeait. Je me demandais si des coécrivains pouvaient parvenir à une forme de consensus par le geste de l’édition plutôt que par la discussion. Chaque nœud porte la possibilité d’être choisi par tous comme texte final. Je poursuis ce travail dans le cadre d’une maîtrise en technologies éducatives.</p>',
+                'thoughts' => '<p>J’ai invité mon groupe d’écriture à essayer un exercice simple que j’avais conçu. Cet exercice était difficile à expliquer avec des mots, plus facile à montrer visuellement: des nœuds qui se déploient, où chaque nœud devient une nouvelle version du même texte, au fur et à mesure que les participants ajoutent des éléments, en retirent d’autres.</p> <p>J’ai toujours aimé les cadavres exquis, mais je voulais pouvoir déplacer les choses, contribuer de manière non-linéaire, et voir ce qui émergerait. Je me demandais si des coécrivains pouvaient parvenir à une forme de consensus par le geste de la révision plutôt que par la discussion, puisque chaque nœud peut devenir le texte final.</p> <p>Je poursuis ce travail dans le cadre d’une maîtrise en technologies éducatives.</p>',
                 'gallery' => [
                     [
                         'path' => 'tag-you-write.png',
@@ -118,7 +123,9 @@ return [
             ],
             'project2' => [
                 'name' => 'LAFIN',
-                'year' => 2024,
+                'status' => 'ongoing',
+                'startYear' => 2004,
+                'lastMajorUpdate' => 2024,
                 'details' => [
                     'HTML, CSS, JavaScript et PHP',
                     'initialement développé et maintenu en Flash',
@@ -127,7 +134,7 @@ return [
                     'récipiendaire d\'une subvention du ministère du Tourisme, de la Culture et du Patrimoine de la Nouvelle-Écosse (2004)'
                 ],
                 'description' => "LAFIN explore l'expérimentation narrative à travers un institut fictif. Actuellement, je travaille sur son redéploiement.",
-                'link' => 'https://la-fin.org',
+                'link' => 'https://lafin.org',
                 'image' => 'lafin.jpg',
                 'alt' => 'image de la page d\'accueil, lien vers la galerie',
                 'show' => true,
@@ -164,7 +171,9 @@ return [
             ],
             'skyPaint' => [
                 'name' => 'SKY PAINT',
-                'year' => 2026,
+                'status' => 'inDevelopment',
+                'startYear' => 2008,
+                'lastMajorUpdate' => 2026,
                 'details' => [
                 ],
                 'description' => 'Un roman en cours.',
@@ -187,7 +196,8 @@ return [
             ],
             'project3' => [
                 'name' => 'STAMPEE',
-                'year' => 2023,
+                'status' => 'completed',
+                'lastMajorUpdate' => 2023,
                 'details' => [
                     'HTML, CSS, PHP, MYSQL',
                     'structure MVC',
@@ -229,7 +239,8 @@ return [
             ],
             'project4' => [
                 'name' => 'VINO',
-                'year' => 2024,
+                'status' => 'completed',
+                'lastMajorUpdate' => 2024,
                 'details' =>[
                     'LARAVEL, VUE', 
                     'contribué à la gestion des comptes utilisateurs, au design général et UX/UI, et au système de recherche/filtrage'
@@ -265,7 +276,8 @@ return [
             /* ,
             'project5' => [
                 'name' => 'HANGMAN-O-GRAM',
-                'year' => 2023,
+                'status' => 'completed',
+                'lastMajorUpdate' => 2023,
                 'details' => [
                     'HTML, CSS, PHP, MYSQL, JavaScript'
                 ],
@@ -277,7 +289,8 @@ return [
             ] */
             'project6' => [
                 'name' => 'LAMP LIGHTER',
-                'year' => 2017,
+                'status' => 'completed',
+                'lastMajorUpdate' => 2017,
                 'details' => [
                     'fabriqué avec Unity',
                     'programmé en C#',
@@ -335,7 +348,8 @@ return [
             ],
             'project7' => [
                 'name' => 'HELP IS NEEDED',
-                'year' => 2017,
+                'status' => 'completed',
+                'lastMajorUpdate' => 2017,
                 'details' => [
                     'réalisé avec Twine',
                     'une histoire interactive construite avec des hyperliens et des conditions minimales'
@@ -367,7 +381,8 @@ return [
             ],
             'project8' => [
                 'name' => 'STAIR SAFETY',
-                'year' => 2016,
+                'status' => 'completed',
+                'lastMajorUpdate' => 2016,
                 'details' => [
                     'réalisé avec Knytt Stories',
                     'un jeu de plateforme narratif'
@@ -415,7 +430,8 @@ return [
             ],
             'project9' => [
                 'name' => 'HOUSE GENERATOR',
-                'year' => 2016,
+                'status' => 'completed',
+                'lastMajorUpdate' => 2016,
                 'details' => [
                     'fabriqué avec Unity',
                     'programmé en C#',
@@ -460,7 +476,7 @@ return [
                 'program-truncated' => 'MA technologies éducatives',
                 'school' => 'Université Concordia',
                 'location' => 'Montréal Qc',
-                'year' => 'NOW',
+                'startYear' => 2026,
                 'image' => 'cat pencil.jpg',
                 'alt' => '',
                 'link' => '',
@@ -470,7 +486,8 @@ return [
                 'program-truncated' => 'AEC development web',
                 'school' => 'College Maisonneuve',
                 'location' => 'Montréal Qc',
-                'year' => 2024,
+                'startYear' => 2022,
+                'endYear' => 2023,
                 'image' => 'web.png',
                 'alt' => '',
                 'link' => '',
@@ -480,7 +497,8 @@ return [
                 'program-truncated' => 'AEC design jeux vidéos',
                 'school' => 'College Dawson',
                 'location' => 'Montréal Qc',
-                'year' => 2017,
+                'startYear' => 2015,
+                'endYear' => 2017,
                 'image' => 'game.png',
                 'alt' => '',
                 'link' => '',
@@ -490,7 +508,8 @@ return [
                 'program-truncated' => 'Résidence narrativité interactive',
                 'school' => 'The Canadian Film Center',
                 'location' => 'Toronto Ont',
-                'year' => 2007,
+                'startYear' => 2005,
+                'endYear' => 2006,
                 'image' => 'int-narr.png',
                 'alt' => '',
                 'link' => 'https://cfccreates.com/content-hub/things-left-unsaid/',
@@ -500,7 +519,8 @@ return [
                 'program-truncated' => 'Bac en arts plastiques',
                 'school' => 'NSCAD U',
                 'location' => 'Halifax NÉ',
-                'year' => 2003,
+                'startYear' => 1999,
+                'endYear' => 2003,
                 'image' => 'media.png',
                 'alt' => '',
                 'link' => '',

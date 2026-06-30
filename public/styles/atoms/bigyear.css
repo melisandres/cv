@@ -4,20 +4,53 @@
     font-weight: 400;
     color: #eeeeed;
     position: absolute;
-    margin-top: -0.2em;
-    z-index: -1;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 0;
     font-size: 20vw;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+/* Ongoing study only (startYear–): taller + tighter, like projects range years */
+.edu .bigyear--range {
+    letter-spacing: -0.03em;
+    transform: translateY(-50%) scaleY(1.2);
+    transform-origin: left center;
+    font-size: 17vw;
+}
+
+.edu .bigyear--range .bigyear-value,
+.edu .bigyear--range .bigyear-dash {
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+    line-height: 1;
+    font-size: inherit;
 }
 
 @media screen and (max-width: 720px) {
     .edu .bigyear {
         text-align: center !important;
+        left: 0;
+        right: 0;
         font-size: 150px;
+    }
+
+    .edu .bigyear--range {
+        font-size: 130px;
+        transform: translateY(-50%) scaleY(1.2);
+        transform-origin: center center;
     }
 }
 
 @media screen and (max-width: 500px) {
     .edu .bigyear {
         font-size: 40vw;
+    }
+
+    .edu .bigyear--range {
+        font-size: 33vw;
     }
 }

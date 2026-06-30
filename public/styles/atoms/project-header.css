@@ -7,13 +7,8 @@
 }
 
 .project-header .project-title {
-    justify-self: center;
-}
-
-@media screen and (min-width: 720px) {
-    .project-header .project-title {
-        justify-self: start;
-    }
+    justify-self: start;
+    width: 100%;
 }
 
 .project-header .circle-img {

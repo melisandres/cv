@@ -51,10 +51,15 @@ return [
         'aFewThoughts' => 'a few thoughts',
         'aFewThoughtsHint' => 'read a few thoughts',
         'aFewThoughtsHideHint' => 'hide a few thoughts',
+        // project status: 'completed' | 'ongoing' | 'inDevelopment'
+        'ongoing' => 'ongoing',
+        'inDevelopment' => 'in development',
         'projectList' => [
             'project1' => [
                 'name' => 'PALINODES',
-                'year' => 2026,
+                'status' => 'inDevelopment',
+                'startYear' => 2024,
+                'lastMajorUpdate' => 2026,
                 'details' =>[
                     '<strong>visualization:</strong> D3.js + custom JavaScript (hierarchical narrative structures)',
                     '<strong>interface:</strong> tree + outline views for collaborative story-building',
@@ -75,7 +80,7 @@ return [
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
-                'thoughts' => '<p>I invited my writing group to try a simple exercise I had designed. This exercise was the spark of an idea that was hard to explain with words, but easier to show visually: nodes branching out, where each node is a new version of the same text, as participants add to it, remove from it. I have always loved exquisite corpses, but I wanted the ability to move things around, to contribute in a non-linear way, and to see what emerged.  I wondered if co-writers might be able to come to a consensus through the act of editing rather than discussing. Each node holds the potential of being selected by all as the final text. I continue this work in the context of an MA in educational technology. </p>',
+                'thoughts' => '<p>I invited my writing group to try a simple exercise I had designed. It was difficult to explain the interaction in words, but much easier to show visually: nodes branching outward, where each node becomes a new version of the same text as participants add, remove, and rearrange its parts.</p> <p>I have always loved exquisite corpses, but I wanted the ability to move things around, to contribute in a non-linear way, and to see what emerged.  I wondered whether co-writers might arrive at consensus through editing rather than discussion, as every node is a candidate for the final text.</p> <p>I continue this work in the context of an MA in educational technology. </p>',
                 'gallery' => [
                     [
                         'path' => 'tag-you-write.png',
@@ -111,7 +116,9 @@ return [
             ],
             'project2' => [
                 'name' => 'LAFIN',
-                'year' => 2024,
+                'status' => 'ongoing',
+                'startYear' => 2004,
+                'lastMajorUpdate' => 2024,
                 'details' =>[
                     'HTML, CSS, JavaScript, and PHP', 
                     'initially developed and maintained in Flash', 
@@ -120,7 +127,7 @@ return [
                     'grant recipient, NS Dept of Tourism, Culture, & Heritage (2004)'
                     ],
                 'description' => 'A web-based fictional institute active in narrative experimentation.',
-                'link' => 'https://la-fin.org',
+                'link' => 'https://lafin.org',
                 'image' => 'lafin.jpg',
                 'alt' => 'image of an archival home page, link to the gallery', 
                 'show' => true,
@@ -156,7 +163,9 @@ return [
             ],
             'skyPaint' => [
                 'name' => 'SKY PAINT',
-                'year' => 2026,
+                'status' => 'inDevelopment',
+                'startYear' => 2008,
+                'lastMajorUpdate' => 2026,
                 'details' => [
                 ],
                 'description' => 'A novel in progress.',
@@ -179,7 +188,8 @@ return [
             ],
             'project3' => [
                 'name' => 'STAMPEE',
-                'year' => 2023,
+                'status' => 'completed',
+                'lastMajorUpdate' => 2023,
                 'details' =>[
                     'HTML, CSS, PHP, MYSQL', 
                     'MVC structure', 
@@ -221,7 +231,8 @@ return [
             ],
             'project4' => [
                 'name' => 'VINO',
-                'year' => 2024,
+                'status' => 'completed',
+                'lastMajorUpdate' => 2024,
                 'details' =>[
                     'LARAVEL, VUE', 
                     'worked on the user account, the general UX/UI and design, and the search/filter system'
@@ -257,7 +268,8 @@ return [
             
             /* 'project5' => [
                 'name' => 'HANGMAN-O-GRAM',
-                'year' => 2023,
+                'status' => 'completed',
+                'lastMajorUpdate' => 2023,
                 'details' =>[
                     'HTML, CSS, PHP, MYSQL, JavaScript'
                     ],
@@ -278,7 +290,8 @@ return [
             ], */
             'project6' => [
                 'name' => 'LAMP LIGHTER',
-                'year' => 2017,
+                'status' => 'completed',
+                'lastMajorUpdate' => 2017,
                 'details' =>[
                     'made in unity', 
                     'programmed in C#',
@@ -335,7 +348,8 @@ return [
             ],
             'project7' => [
                 'name' => 'HELP IS NEEDED',
-                'year' => 2017,
+                'status' => 'completed',
+                'lastMajorUpdate' => 2017,
                 'details' =>[
                     'made with Twine', 
                     'a branching story built with hyperlinks and minimal conditions'
@@ -366,7 +380,8 @@ return [
             ],
             'project8' => [
                 'name' => 'STAIR SAFETY',
-                'year' => 2016,
+                'status' => 'completed',
+                'lastMajorUpdate' => 2016,
                 'details' =>[
                     'made with Knytt Stories', 
                     'a narratively driven plateformer'
@@ -414,7 +429,8 @@ return [
             ],
             'project9' => [
                 'name' => 'HOUSE GENERATOR',
-                'year' => 2016,
+                'status' => 'completed',
+                'lastMajorUpdate' => 2016,
                 'details' =>[
                     'made in Unity', 
                     'programmed in C#',
@@ -457,7 +473,7 @@ return [
                 'program-truncated' => 'MA Ed Tech',
                 'school' => 'Concordia University',
                 'location' => 'Montreal Qc',
-                'year' => 'NOW',
+                'startYear' => 2026,
                 'image' => 'cat pencil.jpg',
                 'alt' => '',
                 'link' => '',
@@ -467,7 +483,8 @@ return [
                 'program-truncated' => 'web dev ACS',
                 'school' => 'College Maisonneuve',
                 'location' => 'Montreal Qc',
-                'year' => 2024,
+                'startYear' => 2022,
+                'endYear' => 2023,
                 'image' => 'web.png',
                 'alt' => '',
                 'link' => '',
@@ -477,7 +494,8 @@ return [
                 'program-truncated' => 'Video Game Design ACS',
                 'school' => 'Dawson College',
                 'location' => 'Montreal Qc',
-                'year' => 2017,
+                'startYear' => 2015,
+                'endYear' => 2017,
                 'image' => 'game.png',
                 'alt' => '',
                 'link' => '',
@@ -487,7 +505,8 @@ return [
                 'program-truncated' => 'Interactive Narrative Residency',
                 'school' => 'The Canadian Film Center',
                 'location' => 'Toronto Ont',
-                'year' => 2007,
+                'startYear' => 2005,
+                'endYear' => 2006,
                 'image' => 'int-narr.png',
                 'alt' => '',
                 'link' => 'https://cfccreates.com/content-hub/things-left-unsaid/',
@@ -497,7 +516,8 @@ return [
                 'program-truncated' => 'Bachelor of Fine Arts',
                 'school' => 'NSCAD U',
                 'location' => 'Halifax NS',
-                'year' => 2003,
+                'startYear' => 1999,
+                'endYear' => 2003,
                 'image' => 'media.png',
                 'alt' => '',
                 'link' => '',

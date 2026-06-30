@@ -56,9 +56,33 @@
                 <article class="project">
                     <div>
                         <div class="project-header">
-                            <div class="project-title">
-                                <span class="bigyear">{{ $value['year'] }}</span>
-                                <h2 class="bigtitle">{{ $value['name'] }}</h2>
+                            @php
+                                $status = $value['status'] ?? 'completed';
+                                $isRange = $status !== 'completed';
+                                $statusLabel = match ($status) {
+                                    'ongoing' => __('message.projects.ongoing'),
+                                    'inDevelopment' => __('message.projects.inDevelopment'),
+                                    default => null,
+                                };
+                                if ($isRange) {
+                                    $startYear = $value['startYear'] ?? null;
+                                    $bigYearValue = ($startYear !== null && $startYear !== '') ? $startYear : 'NOW';
+                                    $accessibleDate = $bigYearValue . '–' . $statusLabel;
+                                } else {
+                                    $bigYearValue = $value['lastMajorUpdate'] ?? $value['year'] ?? '';
+                                    $accessibleDate = $bigYearValue;
+                                }
+                            @endphp
+                            <div @class(['project-title', 'project-title--has-status' => $statusLabel])>
+                                <span class="bigyear{{ $isRange ? ' bigyear--range' : '' }}" aria-hidden="true">
+                                    <span class="bigyear-value">{{ $bigYearValue }}</span>@if($isRange)<span class="bigyear-dash">–</span>@endif
+                                </span>
+                                <h2 class="bigtitle">
+                                    <span class="sr-only">{{ $accessibleDate }}, </span>{{ $value['name'] }}
+                                </h2>
+                                @if($statusLabel)
+                                <span class="project-status">{{ $statusLabel }}</span>
+                                @endif
                             </div>
 
                             <img class="circle-img" src="img/{{$value['image']}}" alt="{{$value['alt']}}" data-project="{{$value['name']}}" data-description="{{ $galleryDescription }}">

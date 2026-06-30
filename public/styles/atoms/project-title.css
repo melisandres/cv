@@ -4,6 +4,8 @@
  */
 .project-title {
     display: grid;
+    position: relative;
+    width: 100%;
     max-width: 100%;
 }
 
@@ -18,7 +20,19 @@
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     color: #eeeeed;
+}
+
+.project-title .bigyear-value,
+.project-title .bigyear-dash {
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+    line-height: 1;
     font-size: 20vw;
+}
+
+.project-title .bigyear--range {
+    white-space: nowrap;
 }
 
 .project-title .bigtitle {
@@ -37,11 +51,42 @@
     line-height: 0.85;
 }
 
+.project-title--has-status {
+    padding-bottom: 1.25em;
+}
+
+.project-status {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    line-height: 1;
+}
+
 @media screen and (max-width: 719px) {
     .project-title .bigyear {
-        justify-self: center;
-        text-align: center;
-        font-size: 40vw;
+        justify-self: start;
+        text-align: left;
+    }
+
+    .project-title .bigyear-value,
+    .project-title .bigyear-dash {
+        font-size: 43.5vw;
+    }
+
+    .project-title .bigyear--range {
+        letter-spacing: -0.03em;
+        transform: scaleY(1.2);
+        transform-origin: left center;
+    }
+
+    .project-title .bigyear--range .bigyear-value,
+    .project-title .bigyear--range .bigyear-dash {
+        font-size: 33vw;
     }
 
     .project-title .bigtitle {
