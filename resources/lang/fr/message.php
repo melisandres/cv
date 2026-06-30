@@ -54,7 +54,7 @@ return [
         'projectList' => [
             'project1' => [
                 'name' => 'PALINODES',
-                'year' => 2026,
+                'year' => 2024,
                 'details' => [
                     '<strong>visualisation :</strong> D3.js + JavaScript personnalisé (structures narratives hiérarchiques)',
 
@@ -160,6 +160,29 @@ return [
                         'description' => 'vue de la page du programme de presse sur une tablette',
                         'alt' => 'vue de la page de \'Lafin Press\'sur une tablette'
                     ],
+                ],
+            ],
+            'skyPaint' => [
+                'name' => 'SKY PAINT',
+                'year' => 2026,
+                'details' => [
+                ],
+                'description' => 'Un roman en cours.',
+                'link' => '',
+                'image' => 'novel-mood-grey.jpeg',
+                'alt' => 'image d\'un mood board pour Sky Paint',
+                'show' => true,
+                'ready' => false,
+                'github' => '',
+                'itchio' => '',
+                'video' => '',
+                'moreInfo' => '',
+                'thoughts' => '<p>Je marchais vers l’université un matin, et des pigeons tombaient du ciel. Il y avait des pigeons blessés partout sur la rue piétonne qui mène à l’école. L’image est restée avec moi, et a lentement donné naissance à l’univers de Sky Paint.</p>
+
+                <p>Sky Paint s’est déployé sur des années d’écriture, de réécriture, de mises de côté et de retours—inévitablement. C’est l’un de mes projets au long cours. Jean voyage et cherche à entrer en relation avec les autres, alors que c’est le mouvement lui-même auquel elle est le plus attachée. Peu à peu, elle réalise que les lieux disparaissent derrière elle. Le roman suit les personnages qu’elle rencontre en chemin. Les métaphores qu’ils utilisent pour comprendre le monde commencent à le transformer, produisant un reflet partagé et instable.</p>
+
+                <p>Je n’ai pas tout à fait lâché le crayon rouge, mais je l’ai envoyé à quelques maisons d’édition. Ça peut prendre du temps avant d’avoir une réponse.</p>',
+                'gallery' => [
                 ],
             ],
             'project3' => [
@@ -270,7 +293,7 @@ return [
                 'itchio' => '',
                 'video' => '',
                 'moreInfo' => '',
-                'thoughts' => '<p>Au fond d’un emploi de nuit, tout ce qu’il me fallait, c’était une lumière — quelque chose qui m’aiderait à voir où j’étais, et à comprendre que je n\'étais pas perdu. Lamplighter est né de cette période. Je m\'imaginais scientifique, faisant les mêmes gestes encore et encore, essayant de comprendre... gardant l\'espoir que la répétition finirait par faire émerger des réponses, une logique cachée à l\'écosystème qui parvient à survivre à la ville qui le déteste. Chaque nuit, Lamplighter grimpe aux lampadaires, ajuste la couleur et l\'intensité des lumières, puis observe leur effet sur les populations d\'oiseaux avoisinantes. Je me disais : c\'est un peu comme un simulateur d\'écologie urbaine... où les rues sombres augmentent la criminalité, et où trop de corneilles portent malheur... mais en le testant, le sentiment qui en ressortait ne rejoignait pas tout à fait ce que je cherchais à explorer. Je continue de le voir comme une expérience, encore inachevée.</p>',
+                'thoughts' => '<p>Au plus profond d’un emploi de nuit, j’aurais voulu une lumière—quelque chose qui m’aiderait à voir où j’étais, et à comprendre que je n’étais pas perdu. Lamplighter est né de cette noirceur.</p><p>Je m’imaginais scientifique, exerçant les mêmes gestes, encore et encore, dans l’espoir de comprendre... gardant l\'espoir que la répétition finirait par faire émerger des réponses, la logique cachée d’un écosystème qui parvient malgré tout à survivre à la ville qui le déteste. Chaque nuit, Lamplighter grimpe aux lampadaires, ajuste la couleur et l\'intensité des lumières, puis observe leur effet sur les populations d\'oiseaux avoisinantes.</p><p>Je me disais : c\'est un peu comme un simulateur d\'écologie urbaine... où les rues sombres augmentent la criminalité, et où trop de corneilles portent malheur... mais en le testant, j’ai senti que ce qui en émergeait ne rejoignait pas tout à fait ce qui m’avait poussé à le faire : la poésie de la répétition, l’assoupissement qu’elle entraîne, la recherche d’un sens. Je continue de le considérer comme une expérience que je revisiterai</p>',
 
                 'gallery' => [
                     [

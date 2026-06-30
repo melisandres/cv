@@ -154,6 +154,29 @@ return [
                     ],
                 ],
             ],
+            'skyPaint' => [
+                'name' => 'SKY PAINT',
+                'year' => 2026,
+                'details' => [
+                ],
+                'description' => 'A novel in progress.',
+                'link' => '',
+                'image' => 'novel-mood-grey.jpeg',
+                'alt' => 'image of a mood board for sky paint',
+                'show' => true,
+                'ready' => false,
+                'github' => '',
+                'itchio' => '',
+                'video' => '',
+                'moreInfo' => '',
+                'thoughts' => '<p>I was walking to the University one morning, and pigeons were falling from the sky. There were wounded pigeons everywhere on the pedestrian street that leads to school. The image stayed with me, and slowly grew into the world of Sky Paint.</p>
+
+                <p>Sky Paint has unfolded over years of writing, editing, setting aside, and returning—inevitably. It is one of my long-term projects. Jean travels and seeks to feel connected to others, while it is movement itself that she connects to most deeply. Slowly, she realizes that places disappear behind her. The novel follows the characters she meets along the way. The metaphors they use to understand the world begin to reshape it, producing a shared and unstable reflection.</p>
+
+                <p>I haven’t quite let go of the red pen, but I have sent it to a few publishers. It can take time to get an answer.</p>',
+                'gallery' => [
+                ],
+            ],
             'project3' => [
                 'name' => 'STAMPEE',
                 'year' => 2023,
